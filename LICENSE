@@ -1,6 +1,6 @@
-MIT License
+# MIT License
 
-Copyright (c) 2026 ALMA ZANNUBA ARIFAH
+Copyright (c) 2025 Alma Zannuba Arifah - Universitas Trilogi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Academic Citation
+
+If you use this software in academic work, please cite:
+
+Arifah, A. Z. (2025). Prediksi Pemakaian Daya Listrik Pada Rumah Tangga di Jakarta 
+Berbasis IoT dengan Menggunakan Metode Fuzzy Time Series. Undergraduate Thesis, 
+Universitas Trilogi, Jakarta, Indonesia.
