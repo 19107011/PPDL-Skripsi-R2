@@ -1,0 +1,144 @@
+[17:59:33][INFO] [MAIN][BASE][GENERAL] FTS Sensitivity Valid-LOCK changed -> Valid : OFF
+[17:59:34][INFO] [MAIN][BASE][GENERAL] Startup reset: cleared raw=0 rows, exp=0 rows.
+[17:59:34][INFO] [MAIN][BASE][GENERAL] Startup reset enabled. Cleared runtime cache: raw=0 rows, exp=0 rows.
+[17:59:34][INFO] [MAIN][BASE][GENERAL] No data found in DB on startup.
+[17:59:51][INFO] [MAIN][BASE][GENERAL] EVT=UI_SELECT_FOLDER | ROUTE: MAIN  DATABASE | path=D:/Downloads | json_files=2  status=OK
+[18:00:01][INFO] [MAIN][BASE][GENERAL] EVT=UI_SELECT_JSON | ROUTE: MAIN  DATABASE | file=Data_26-desember-2025_sampai_10-januari-2026.json | path=D:/Downloads\Data_26-desember-2025_sampai_10-januari-2026.json
+[18:00:01][INIT] [DATABASE][CAL][GENERAL] EVT=DATA_INGESTION_START | ROUTE: DATABASE  HOME,INITIAL | file=Data_26-desember-2025_sampai_10-januari-2026.json
+[18:00:01][SUCCESS] [DATABASE][RPT][GENERAL] EVT=DATA_INGESTION_DONE | ROUTE: DATABASE  HOME,INITIAL | file=Data_26-desember-2025_sampai_10-januari-2026.json | rows_found=4582 | rows_inserted=4582
+[18:00:02][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4582 rows range date time start: 25/12/2025 16:49:45 - 10/01/2026 17:52:41
+[18:00:03][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[18:00:03][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 215 rows range date time start: 09/01/2026 17:02:40 - 10/01/2026 10:52:41
+[18:00:03][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[18:00:03][INFO] [HOME][BASE][GENERAL] EVT=UI_SET_RANGE_AVG | ROUTE: HOME  HOME | start=25/12/2025 16:49:45 | end=10/01/2026 17:52:41
+[18:00:03][INFO] [HOME][BASE][GENERAL] EVT=UI_SET_RANGE_DAILY | ROUTE: HOME  HOME | date=10/01/2026
+[18:00:03][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=4497 | æV=228.30 | æA=0.08 | æW=18.22 | ækWh=6.8640 | æHz=49.98 | æPF=0.95
+[18:00:03][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=131 | æV=228.77 | æA=0.06 | æW=12.75 | ækWh=0.1390 | æHz=49.98 | æPF=0.94
+[18:00:03][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=4497 | daily_rows=131  status=SYNCED
+[18:00:03][INFO] [MAIN][BASE][GENERAL] Synchronize process completed: Tab Home + Tab Initial refreshed
+[18:00:21][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4582 rows range date time start: 25/12/2025 16:49:45 - 10/01/2026 17:52:41
+[18:00:21][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[18:00:22][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 215 rows range date time start: 09/01/2026 17:02:40 - 10/01/2026 10:52:41
+[18:00:22][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[18:00:22][INFO] [HOME][BASE][GENERAL] EVT=UI_SET_RANGE_AVG | ROUTE: HOME  HOME | start=27/12/2025 23:49:45 | end=11/01/2026 00:52:41
+[18:00:22][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=3862 | æV=228.68 | æA=0.08 | æW=17.78 | ækWh=5.7330 | æHz=49.98 | æPF=0.95
+[18:00:22][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=131 | æV=228.77 | æA=0.06 | æW=12.75 | ækWh=0.1390 | æHz=49.98 | æPF=0.94
+[18:00:22][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=3862 | daily_rows=131  status=SYNCED
+[18:00:26][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4582 rows range date time start: 25/12/2025 16:49:45 - 10/01/2026 17:52:41
+[18:00:27][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[18:00:27][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 215 rows range date time start: 09/01/2026 17:02:40 - 10/01/2026 10:52:41
+[18:00:27][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[18:00:27][INFO] [HOME][BASE][GENERAL] EVT=UI_SET_RANGE_AVG | ROUTE: HOME  HOME | start=27/12/2025 23:49:45 | end=09/01/2026 00:52:41
+[18:00:27][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=3454 | æV=228.60 | æA=0.08 | æW=17.86 | ækWh=5.1490 | æHz=49.98 | æPF=0.95
+[18:00:27][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=131 | æV=228.77 | æA=0.06 | æW=12.75 | ækWh=0.1390 | æHz=49.98 | æPF=0.94
+[18:00:27][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=3454 | daily_rows=131  status=SYNCED
+[18:01:13][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4582 rows range date time start: 25/12/2025 16:49:45 - 10/01/2026 17:52:41
+[18:01:13][INFO] [MAIN][BASE][GENERAL] Chart plotted with 5 active lines
+[18:01:13][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 215 rows range date time start: 09/01/2026 17:02:40 - 10/01/2026 10:52:41
+[18:01:14][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[18:01:14][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=3454 | æV=228.60 | æA=0.08 | æW=17.86 | ækWh=5.1490 | æHz=49.98 | æPF=0.95
+[18:01:14][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=131 | æV=228.77 | æA=0.06 | æW=12.75 | ækWh=0.1390 | æHz=49.98 | æPF=0.94
+[18:01:14][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=3454 | daily_rows=131  status=SYNCED
+[18:01:14][INFO] [MAIN][BASE][GENERAL] Chart plotted with 5 active lines
+[18:01:15][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4582 rows range date time start: 25/12/2025 16:49:45 - 10/01/2026 17:52:41
+[18:01:16][INFO] [MAIN][BASE][GENERAL] Chart plotted with 4 active lines
+[18:01:16][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 215 rows range date time start: 09/01/2026 17:02:40 - 10/01/2026 10:52:41
+[18:01:16][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[18:01:16][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=3454 | æV=228.60 | æA=0.08 | æW=17.86 | ækWh=5.1490 | æHz=49.98 | æPF=0.95
+[18:01:16][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=131 | æV=228.77 | æA=0.06 | æW=12.75 | ækWh=0.1390 | æHz=49.98 | æPF=0.94
+[18:01:16][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=3454 | daily_rows=131  status=SYNCED
+[18:01:17][INFO] [MAIN][BASE][GENERAL] Chart plotted with 4 active lines
+[18:01:18][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4582 rows range date time start: 25/12/2025 16:49:45 - 10/01/2026 17:52:41
+[18:01:18][INFO] [MAIN][BASE][GENERAL] Chart plotted with 3 active lines
+[18:01:18][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 215 rows range date time start: 09/01/2026 17:02:40 - 10/01/2026 10:52:41
+[18:01:19][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[18:01:19][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=3454 | æV=228.60 | æA=0.08 | æW=17.86 | ækWh=5.1490 | æHz=49.98 | æPF=0.95
+[18:01:19][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=131 | æV=228.77 | æA=0.06 | æW=12.75 | ækWh=0.1390 | æHz=49.98 | æPF=0.94
+[18:01:19][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=3454 | daily_rows=131  status=SYNCED
+[18:01:19][INFO] [MAIN][BASE][GENERAL] Chart plotted with 3 active lines
+[18:01:20][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4582 rows range date time start: 25/12/2025 16:49:45 - 10/01/2026 17:52:41
+[18:01:21][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[18:01:21][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 215 rows range date time start: 09/01/2026 17:02:40 - 10/01/2026 10:52:41
+[18:01:21][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[18:01:21][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=3454 | æV=228.60 | æA=0.08 | æW=17.86 | ækWh=5.1490 | æHz=49.98 | æPF=0.95
+[18:01:21][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=131 | æV=228.77 | æA=0.06 | æW=12.75 | ækWh=0.1390 | æHz=49.98 | æPF=0.94
+[18:01:21][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=3454 | daily_rows=131  status=SYNCED
+[18:01:22][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[18:01:22][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4582 rows range date time start: 25/12/2025 16:49:45 - 10/01/2026 17:52:41
+[18:01:23][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[18:01:23][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 215 rows range date time start: 09/01/2026 17:02:40 - 10/01/2026 10:52:41
+[18:01:23][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[18:01:23][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=3454 | æV=228.60 | æA=0.08 | æW=17.86 | ækWh=5.1490 | æHz=49.98 | æPF=0.95
+[18:01:23][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=131 | æV=228.77 | æA=0.06 | æW=12.75 | ækWh=0.1390 | æHz=49.98 | æPF=0.94
+[18:01:23][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=3454 | daily_rows=131  status=SYNCED
+[18:01:24][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[18:03:30][INIT] [INITIAL][CAL][ARIMA] EVT=PARAM_ARIMA_SUBMIT | ROUTE: INITIAL  MAIN,RESUME | ?mode=nonseasonal | ?order=(1,1,1) | ?seasonal_order=(-,-,-,0)
+[18:03:30][INFO] [MAIN][BASE][GENERAL] Initial Data Parameter for ARIMA submitted -> Mode : nonseasonal | p,d,q : (1,1,1) | P,D,Q : (-,-,-) | s : 0 -> Value lock for analysis
+[18:03:33][INFO] [MAIN][BASE][GENERAL] Initial Data Parameter for General submitted -> Variabel Target : 1 | Train/ Test Split : 80 | Forecasting : 1 -> Value lock for analysis
+[18:03:40][INFO] [MAIN][BASE][GENERAL] FTS Sensitivity Valid-LOCK changed -> Valid : ON
+[18:03:41][INFO] [MAIN][BASE][GENERAL] Initial Data Parameter for FTS submitted -> Interval : 7 | Partition : Equal Width | Sensitivity : 1.000 | Valid : ON -> Value lock for analysis
+[18:03:44][INFO] [MAIN][BASE][GENERAL] Initial Data Parameter for ANN submitted -> Epoch : 90 | Layers : 1 | Neuron/Layers : 10 | LR : 0.0100 | Batch : 32 | Lag K : 1 | Activation : relu -> Value lock for analysis
+[18:03:44][INFO] [INITIAL][CAL][GENERAL] EVT=PARAM_LOCK_APPLIED | ROUTE: INITIAL  MAIN,RESUME | status=READY
+[18:03:47][INIT] [MAIN][CAL][GENERAL] EVT=UI_CLICK_START_ANALYSIS | ROUTE: MAIN  HOME,RESUME | status=START
+[18:03:47][INFO] [MAIN][BASE][GENERAL] [pipeli] ===== START RUN =====
+[18:03:47][INIT] [MAIN][CAL][GENERAL] Starting new analysis run with current configuration.
+[18:03:47][INFO] [MAIN][BASE][GENERAL] [source] Rows=3454 | Range=2025-12-27 23:52:34.298000 -> 2026-01-09 00:52:40.218000
+[18:03:47][INFO] [MAIN][BASE][GENERAL] [param] Split=80% | Horizon=1
+[18:03:47][INFO] [MAIN][BASE][GENERAL] [param] FTS interval=7 | sensitivity=1.0 | valid_lock=True
+[18:03:47][INFO] [MAIN][BASE][GENERAL] [param] ANN epochs=90 | neurons=10 | layers=1 | lr=0.01
+[18:03:47][INFO] [MAIN][BASE][GENERAL] [param] ARIMA mode=nonseasonal | order=(1,1,1) | s=0
+[18:03:48][INFO] [MAIN][CAL][GENERAL] EVT=PRE_RESAMPLE | ROUTE: MAIN  HOME,RESUME | step=1_Time_Index: Convert 'ts' (epoch ms) to DatetimeIndex | step=2_Resample: rule='5T' (5 minutes), aggregation='mean' | step=3_Imputation: ffill() -> bfill() -> fillna(0)
+[18:03:48][GEN] [MAIN][CAL][GENERAL] EVT=PRE_RESAMPLE | ROUTE: MAIN  HOME,RESUME | original_rows=3454 | resampled_rows=3469 | missing_filled_count=15 | status=OK
+[18:03:48][INFO] [MAIN][CAL][GENERAL] EVT=PRE_SPLIT | ROUTE: MAIN  HOME,RESUME | ratio=0.80 | calc_n_train=floor(len(series) * ratio) | train_set=series[0 : n_train] | test_set=series[n_train : end] | constraint=Sequential split (No random shuffle)
+[18:03:48][GEN] [MAIN][CAL][GENERAL] EVT=PRE_SPLIT | ROUTE: MAIN  HOME,RESUME | n_total=3469 | n_train=2775 | n_test=694 | status=OK
+[18:03:48][INFO] [MAIN][RPT][GENERAL] [baseline] Naive MAE=2.041847 | RMSE=4.390597 | MAPE=14.2842%
+[18:03:48][INFO] [MAIN][RPT][GENERAL] [baseline] MA(7) MAE=3.048815 | RMSE=4.782158 | MAPE=22.8171%
+[18:03:48][GEN] [MAIN][CAL][FTS] EVT=FTS_PARTITION | ROUTE: MAIN  HOME,RESUME | partition=equal-width | requested_intervals=7 | actual_intervals=7 | pad_pct=0.05
+[18:03:48][GEN] [MAIN][CAL][FTS] EVT=FTS_UOD | ROUTE: MAIN  HOME,RESUME | uod_min=-0.050000000000000266 | uod_max=51.65 | formula_min=min(data)-pad | formula_max=max(data)+pad
+[18:03:48][INFO] [MAIN][CAL][FTS] EVT=FTS_UOD | ROUTE: MAIN  HOME,RESUME | n_intervals=7 | interval_len=7.3857 | formula_len=(uod_max-uod_min)/n
+[18:03:48][GEN] [MAIN][CAL][FTS] EVT=FTS_FLR | ROUTE: MAIN  HOME,RESUME | flr_count=2774 | intervals=7
+[18:03:48][DEBUG] [MAIN][CAL][FTS] EVT=FTS_FLR | ROUTE: MAIN  HOME,RESUME | flr_head=['A3 -> A3', 'A3 -> A3', 'A3 -> A3']
+[18:03:48][GEN] [MAIN][CAL][FTS] EVT=FTS_FLRG | ROUTE: MAIN  HOME,RESUME | flrg_groups=7
+[18:03:48][DEBUG] [MAIN][CAL][FTS] EVT=FTS_FLRG | ROUTE: MAIN  HOME,RESUME | flrg_head=[('A1', 'A1 (72.4%), A2 (14.6%), A3 (11.3%), A4 (1.8%)'), ('A2', 'A2 (75.3%), A1 (11.2%), A3 (8.5%), A4 (4.7%), A5 (0.2%), A7 (0.2%)'), ('A3', 'A3 (79.5%), A4 (10.4%), A2 (4.3%), A1 (4.2%), A5 (1.2%), A6 (0.3%)')]
+[18:03:48][INFO] [MAIN][CAL][FTS] EVT=FTS_FORECAST | ROUTE: MAIN  HOME,RESUME | defuzz_method=Weighted_Average | formula=sum(midpoint[i] * support[i])
+[18:03:48][DEBUG] [MAIN][CAL][FTS] EVT=FTS_FORECAST | ROUTE: MAIN  HOME,RESUME | forecast_head=[None, 24.597886207503965, 24.597886207503965, 24.597886207503965, 24.597886207503965]
+[18:03:48][INFO] [MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | MAE=2.999659 | RMSE=4.482351 | MAPE=21.8566%  status=OK
+[18:03:48][INFO] [MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAE=mean(|y-yhat|)=2.999659
+[18:03:48][INFO] [MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | formula_RMSE=sqrt(mean((y-yhat)^2))=4.482351
+[18:03:48][INFO] [MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAPE=mean(|(y-yhat)/y|)*100=21.8566%
+[18:03:48][INFO] [MAIN][BASE][GENERAL] [sens] cases=3 | best=case2
+[18:03:48][INIT] [MAIN][CAL][ANN] EVT=ANN_TRAIN_START | ROUTE: MAIN  HOME,RESUME | epochs=90 | neurons=10 | layers=1 | lr=0.01
+[18:03:57][INFO] [MAIN][CAL][ANN] EVT=ANN_TRAIN_START | ROUTE: MAIN  HOME,RESUME | scaler_min=2.3000 | scaler_max=49.3000 | formula_norm=(x-min)/(max-min)
+[18:03:57][INFO] [MAIN][CAL][ANN] EVT=ANN_TRAIN_START | ROUTE: MAIN  HOME,RESUME | layers=1 | neurons=10 | activation=relu_then_linear
+[18:03:57][INFO] [MAIN][CAL][ANN] EVT=ANN_TRAIN_END | ROUTE: MAIN  HOME,RESUME | final_loss=0.009659677743911743 | epochs_run=90  status=OK
+[18:03:57][DEBUG] [MAIN][CAL][ANN] EVT=ANN_TRAIN_END | ROUTE: MAIN  HOME,RESUME | loss_head_tail=[0.010426794178783894, 0.009764165617525578, 0.009706251323223114] ... [0.009641047567129135, 0.009712801314890385, 0.009659677743911743]
+[18:03:57][DEBUG] [MAIN][CAL][ANN] EVT=ANN_PREDICT | ROUTE: MAIN  HOME,RESUME | forecast_head=[22.826725006103516, 21.848800659179688, 22.737825393676758, 23.182334899902344, 24.160263061523438]
+[18:03:57][INFO] [MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | MAE=2.255675 | RMSE=4.097023 | MAPE=17.7932%  status=OK
+[18:03:57][INFO] [MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAE=mean(|y-yhat|)=2.255675
+[18:03:57][INFO] [MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | formula_RMSE=sqrt(mean((y-yhat)^2))=4.097023
+[18:03:57][INFO] [MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAPE=mean(|(y-yhat)/y|)*100=17.7932%
+[18:03:57][INIT] [MAIN][CAL][ARIMA] EVT=ARIMA_FIT | ROUTE: MAIN  HOME,RESUME | mode=nonseasonal | order=(1,1,1) | seasonal=(0,1,0,0)
+[18:03:57][INFO] [MAIN][CAL][ARIMA] EVT=ARIMA_DIAG | ROUTE: MAIN  HOME,RESUME | AIC=16309.577064395395 | BIC=16327.359037476324  status=OK
+[18:03:57][DEBUG] [MAIN][CAL][ARIMA] EVT=ARIMA_FORECAST | ROUTE: MAIN  HOME,RESUME | forecast_head=[23.65986213208727, 23.69943249082608, 23.725589482502148, 23.742879904811883, 23.75430930416145]
+[18:03:57][INFO] [MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | MAE=7.134932 | RMSE=9.465429 | MAPE=77.2030%  status=OK
+[18:03:57][INFO] [MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAE=mean(|y-yhat|)=7.134932
+[18:03:57][INFO] [MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | formula_RMSE=sqrt(mean((y-yhat)^2))=9.465429
+[18:03:57][INFO] [MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAPE=mean(|(y-yhat)/y|)*100=77.2030%
+[18:03:57][SUCCESS] [MAIN][RPT][GENERAL] Analysis pipeline finished. Rendering results...
+[18:03:57][INFO] [MAIN][RPT][GENERAL] [eval] ===== Evaluasi Prediksi =====
+[18:03:57][INFO] [MAIN][RPT][GENERAL] [eval] FTS MAE=2.999659 | RMSE=4.482351 | MAPE=21.8566%
+[18:03:57][INFO] [MAIN][RPT][GENERAL] [eval] ANN MAE=2.255675 | RMSE=4.097023 | MAPE=17.7932%
+[18:03:57][INFO] [MAIN][RPT][GENERAL] [eval] ARIMA MAE=7.134932 | RMSE=9.465429 | MAPE=77.2030%
+[18:03:57][INFO] [MAIN][RPT][GENERAL] [resume] Live: V=228.10 | I=0.07 | P=14.40 W | PF=0.94 | F=50.00 Hz
+[18:03:57][SUCCESS] [MAIN][RPT][GENERAL] Experiment log saved with run_id=19
+[18:03:57][SUCCESS] [MAIN][RPT][GENERAL] Experiment results stored to database for all methods.
+[18:03:57][INFO] [MAIN][BASE][GENERAL] [pipeli] ===== END RUN (OK) =====
+[18:04:00][INFO] [MAIN][BASE][GENERAL] Cancel clicked but no active worker.
+[18:07:23][INIT] [RESUME][CAL][GENERAL] EVT=EXPORT_START | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_180648.pdf
+[18:07:23][INIT] [RESUME][CAL][GENERAL] ===== START Export | TYPE=RESUME | FILE=resume_export_20260110_180648.pdf =====
+[18:07:23][GEN] [RESUME][CAL][GENERAL] EVT=RPT_BUILD_START | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_180648.pdf | progress=5% | stage=Preparing
+[18:07:23][GEN] [RESUME][CAL][GENERAL] EVT=RPT_BUILD_START | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_180648.pdf | progress=30% | stage=Summary Report
+[18:07:26][INFO] [RESUME][RPT][GENERAL] EVT=RPT_BUILD_DONE | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_180648.pdf | progress=100% | stage=Done  status=OK
+[18:07:26][SUCCESS] [RESUME][RPT][GENERAL] EVT=EXPORT_DONE | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_180648.pdf  status=OK
+[18:07:26][SUCCESS] [RESUME][RPT][GENERAL] ===== END Export | TYPE=RESUME | FILE=resume_export_20260110_180648.pdf | STATUS=OK =====
+[18:08:20][SUCCESS] [MAIN][RPT][GENERAL] Open SQL exported to temp file: C:\Users\nadhi\AppData\Local\Temp\ppdl_db_export_20260110_180820.csv

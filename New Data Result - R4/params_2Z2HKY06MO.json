@@ -1,0 +1,39 @@
+{
+  "run_guid": "2Z2HKY06MO",
+  "identity_lines": [
+    "RUN_GUID=2Z2HKY06MO",
+    "RUN_START=2026-01-11 20:41:25",
+    "APP_VERSION=1.0"
+  ],
+  "exported_at": "2026-01-11 20:45:57",
+  "params": {
+    "global": {
+      "split_ratio": 0.8,
+      "forecast_horizon": 1,
+      "resample_method": "mean",
+      "target_variable": "watt"
+    },
+    "fts": {
+      "interval": 9,
+      "sensitivity": 11.0,
+      "sensitivity_locked": true,
+      "partition": "Equal Width"
+    },
+    "ann": {
+      "epoch": 100,
+      "neuron": 16,
+      "layers": 1,
+      "lr": 0.01
+    },
+    "arima": {
+      "p": 1,
+      "d": 1,
+      "q": 1,
+      "seasonal": false,
+      "P": 0,
+      "D": 1,
+      "Q": 0,
+      "s": 0
+    }
+  }
+}

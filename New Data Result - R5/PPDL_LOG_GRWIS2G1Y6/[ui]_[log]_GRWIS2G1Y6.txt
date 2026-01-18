@@ -1,0 +1,457 @@
+[03:05:19][INFO] [MAIN][BASE][GENERAL] Startup reset: cleared raw=0 rows, exp=0 rows.
+[03:05:19][INFO] [MAIN][BASE][GENERAL] Startup reset enabled. Cleared runtime cache: raw=0 rows, exp=0 rows.
+[03:05:19][INFO] [MAIN][BASE][GENERAL] No data found in DB on startup.
+[03:05:45][INFO] [MAIN][BASE][GENERAL] EVT=UI_SELECT_FOLDER | ROUTE: MAIN  DATABASE | status=CANCEL  status=CANCEL
+[03:06:46][INFO] [MAIN][BASE][GENERAL] EVT=UI_SELECT_FOLDER | ROUTE: MAIN  DATABASE | path=D:/Downloads | json_files=4  status=OK
+[03:06:52][INFO] [MAIN][BASE][GENERAL] EVT=UI_SELECT_JSON | ROUTE: MAIN  DATABASE | file=Data_26-desember-2025_sampai_12-januari-2026.json | path=D:/Downloads\Data_26-desember-2025_sampai_12-januari-2026.json
+[03:06:52][INIT] [DATABASE][CAL][GENERAL] EVT=DATA_INGESTION_START | ROUTE: DATABASE  HOME,INITIAL | file=Data_26-desember-2025_sampai_12-januari-2026.json
+[03:06:53][SUCCESS] [DATABASE][RPT][GENERAL] EVT=DATA_INGESTION_DONE | ROUTE: DATABASE  HOME,INITIAL | file=Data_26-desember-2025_sampai_12-januari-2026.json | rows_found=4980 | rows_inserted=4980
+[03:06:53][INFO] [MAIN][BASE][GENERAL] 🔍 E2E-01 UI VALIDATION: QComboBox populated successfully | Options=6 | Default='W - Daya (Watt)' | Value='watt' | Status=READY_FOR_SELECTION
+[03:06:53][INFO] [MAIN][BASE][GENERAL] 🔑 CRITICAL PARAM: TARGET_VARIABLE='watt' (W - Daya (Watt)) - UI POPULATED
+[03:06:53][INFO] [MAIN][BASE][GENERAL] Target variable combobox populated with 6 options, default: W - Daya
+[03:06:54][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:06:55][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:06:55][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 37 rows range date time start: 11/01/2026 17:02:42 - 11/01/2026 20:02:43
+[03:06:55][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:06:55][INFO] [HOME][BASE][GENERAL] EVT=UI_SET_RANGE_AVG | ROUTE: HOME  HOME | start=25/12/2025 16:49:45 | end=12/01/2026 03:02:43
+[03:06:55][INFO] [HOME][BASE][GENERAL] EVT=UI_SET_RANGE_DAILY | ROUTE: HOME  HOME | date=12/01/2026
+[03:06:55][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=4895 | æV=228.37 | æA=0.08 | æW=18.30 | ækWh=7.5000 | æHz=49.98 | æPF=0.95
+[03:06:55][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=0 | æV=0.00 | æA=0.00 | æW=0.00 | ækWh=0.0000 | æHz=0.00 | æPF=0.00
+[03:06:55][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=4895 | daily_rows=0  status=SYNCED
+[03:06:55][INFO] [MAIN][BASE][GENERAL] Synchronize process completed: Tab Home + Tab Initial refreshed
+[03:07:36][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:07:36][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:07:36][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 37 rows range date time start: 11/01/2026 17:02:42 - 11/01/2026 20:02:43
+[03:07:37][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:07:37][INFO] [HOME][BASE][GENERAL] EVT=UI_SET_RANGE_AVG | ROUTE: HOME  HOME | start=27/12/2025 23:49:45 | end=12/01/2026 10:02:43
+[03:07:37][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=4260 | æV=228.72 | æA=0.08 | æW=17.91 | ækWh=6.3690 | æHz=49.98 | æPF=0.95
+[03:07:37][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=0 | æV=0.00 | æA=0.00 | æW=0.00 | ækWh=0.0000 | æHz=0.00 | æPF=0.00
+[03:07:37][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=4260 | daily_rows=0  status=SYNCED
+[03:07:47][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:07:48][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:07:48][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 37 rows range date time start: 11/01/2026 17:02:42 - 11/01/2026 20:02:43
+[03:07:48][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:07:48][INFO] [HOME][BASE][GENERAL] EVT=UI_SET_RANGE_AVG | ROUTE: HOME  HOME | start=27/12/2025 23:49:45 | end=04/01/2026 10:02:43
+[03:07:48][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:07:48][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:07:48][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:08:03][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:08:04][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:08:04][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:08:04][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:08:04][INFO] [HOME][BASE][GENERAL] EVT=UI_SET_RANGE_DAILY | ROUTE: HOME  HOME | date=04/01/2026
+[03:08:04][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:08:04][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:08:04][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:09:00][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:09:01][INFO] [MAIN][BASE][GENERAL] Chart plotted with 5 active lines
+[03:09:01][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:09:01][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:09:01][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:09:01][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:09:01][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:09:02][INFO] [MAIN][BASE][GENERAL] Chart plotted with 5 active lines
+[03:09:03][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:09:04][INFO] [MAIN][BASE][GENERAL] Chart plotted with 4 active lines
+[03:09:04][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:09:04][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:09:04][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:09:04][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:09:04][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:09:05][INFO] [MAIN][BASE][GENERAL] Chart plotted with 4 active lines
+[03:09:06][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:09:06][INFO] [MAIN][BASE][GENERAL] Chart plotted with 3 active lines
+[03:09:07][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:09:07][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:09:07][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:09:07][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:09:07][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:09:08][INFO] [MAIN][BASE][GENERAL] Chart plotted with 3 active lines
+[03:09:09][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:09:10][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:09:10][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:09:10][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:09:10][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:09:10][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:09:10][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:09:11][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:09:12][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:09:13][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:09:13][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:09:13][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:09:13][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:09:13][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:09:13][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:09:14][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:09:30][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:09:31][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:09:31][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:09:31][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:09:31][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:09:31][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:09:31][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:09:32][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:09:32][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:09:33][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:09:33][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:09:34][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:09:34][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:09:34][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:09:34][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:09:34][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:09:47][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:09:47][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:09:47][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:09:48][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:09:48][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:09:48][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:09:48][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:09:49][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:09:49][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:09:50][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:09:50][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:09:50][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:09:51][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:09:51][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:09:51][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:09:51][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:10:04][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:10:04][INFO] [MAIN][BASE][GENERAL] Chart plotted with 0 active lines
+[03:10:04][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:10:04][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:10:04][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:10:04][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:10:04][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:10:04][INFO] [MAIN][BASE][GENERAL] Chart plotted with 0 active lines
+[03:10:05][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:10:05][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:10:06][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:10:06][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:10:06][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:10:06][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:10:06][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:10:06][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:10:20][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:10:21][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:10:21][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:10:21][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:10:21][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:10:21][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:10:21][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:10:22][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:10:22][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:10:23][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:10:24][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:10:24][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:10:24][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:10:24][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:10:24][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:10:25][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:10:25][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:10:25][INFO] [MAIN][BASE][GENERAL] Chart plotted with 0 active lines
+[03:10:25][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:10:25][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:10:25][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:10:25][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:10:25][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:10:26][INFO] [MAIN][BASE][GENERAL] Chart plotted with 0 active lines
+[03:10:27][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:10:28][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:10:28][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:10:28][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:10:28][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:10:28][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:10:28][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:10:29][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:10:47][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:10:48][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:10:48][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:10:48][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:10:48][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:10:48][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:10:48][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:10:49][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:10:50][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:10:51][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:10:51][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:10:51][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:10:51][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:10:52][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:10:52][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:10:52][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:12:23][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:12:23][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:12:24][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:12:24][INFO] [MAIN][BASE][GENERAL] Chart plotted with 5 active lines
+[03:12:24][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:12:24][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:12:24][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:12:24][INFO] [MAIN][BASE][GENERAL] Chart plotted with 5 active lines
+[03:12:25][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:12:26][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:12:26][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:12:26][INFO] [MAIN][BASE][GENERAL] Chart plotted with 4 active lines
+[03:12:26][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:12:26][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:12:26][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:12:26][INFO] [MAIN][BASE][GENERAL] Chart plotted with 4 active lines
+[03:12:27][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:12:28][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:12:28][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:12:28][INFO] [MAIN][BASE][GENERAL] Chart plotted with 3 active lines
+[03:12:28][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:12:28][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:12:28][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:12:28][INFO] [MAIN][BASE][GENERAL] Chart plotted with 3 active lines
+[03:12:29][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:12:30][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:12:30][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:12:30][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:12:30][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:12:30][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:12:30][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:12:30][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:12:32][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:12:33][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:12:33][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:12:33][INFO] [MAIN][BASE][GENERAL] Chart plotted with 3 active lines
+[03:12:33][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:12:33][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:12:33][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:12:33][INFO] [MAIN][BASE][GENERAL] Chart plotted with 3 active lines
+[03:12:34][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:12:35][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:12:35][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:12:35][INFO] [MAIN][BASE][GENERAL] Chart plotted with 4 active lines
+[03:12:35][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:12:35][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:12:35][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:12:35][INFO] [MAIN][BASE][GENERAL] Chart plotted with 4 active lines
+[03:12:36][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:12:37][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:12:37][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:12:37][INFO] [MAIN][BASE][GENERAL] Chart plotted with 5 active lines
+[03:12:37][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:12:37][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:12:37][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:12:37][INFO] [MAIN][BASE][GENERAL] Chart plotted with 5 active lines
+[03:12:38][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:12:39][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:12:39][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:12:39][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:12:39][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:12:39][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:12:39][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:12:40][INFO] [MAIN][BASE][GENERAL] Chart plotted with 6 active lines
+[03:12:58][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:12:58][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:12:58][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:12:59][INFO] [MAIN][BASE][GENERAL] Chart plotted with 5 active lines
+[03:12:59][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:12:59][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:12:59][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:12:59][INFO] [MAIN][BASE][GENERAL] Chart plotted with 5 active lines
+[03:13:00][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:13:00][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:13:01][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:13:01][INFO] [MAIN][BASE][GENERAL] Chart plotted with 4 active lines
+[03:13:01][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:13:01][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:13:01][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:13:01][INFO] [MAIN][BASE][GENERAL] Chart plotted with 4 active lines
+[03:13:02][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:13:03][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:13:03][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:13:03][INFO] [MAIN][BASE][GENERAL] Chart plotted with 3 active lines
+[03:13:03][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:13:03][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:13:03][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:13:03][INFO] [MAIN][BASE][GENERAL] Chart plotted with 3 active lines
+[03:13:04][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:13:05][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:13:05][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:13:05][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:13:05][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:13:05][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:13:05][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:13:05][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:13:06][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:13:07][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:13:07][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:13:07][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:13:07][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:13:07][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:13:07][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:13:07][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:13:24][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:13:25][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:13:25][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:13:25][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:13:25][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:13:25][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:13:25][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:13:26][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:13:26][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:13:27][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:13:27][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:13:27][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:13:28][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:13:28][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:13:28][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:13:28][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:14:26][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:14:27][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:14:27][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:14:27][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:14:27][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:14:27][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:14:27][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:14:27][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:14:28][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:14:29][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:14:29][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:14:29][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:14:29][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:14:29][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:14:29][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:14:29][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:14:39][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:14:40][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:14:40][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:14:40][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:14:40][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:14:40][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:14:40][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:14:41][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:14:41][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:14:42][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:14:42][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:14:43][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:14:43][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:14:43][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:14:43][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:14:43][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:14:53][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:14:54][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:14:54][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:14:54][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:14:54][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:14:54][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:14:54][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:14:55][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:14:55][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:14:56][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:14:56][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:14:56][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:14:56][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:14:56][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:14:56][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:14:56][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:15:10][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:15:11][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:15:11][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:15:11][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:15:11][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:15:11][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:15:11][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:15:12][INFO] [MAIN][BASE][GENERAL] Chart plotted with 2 active lines
+[03:15:13][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Average loaded: 4980 rows range date time start: 25/12/2025 16:49:45 - 12/01/2026 03:02:43
+[03:15:13][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:15:13][SUCCESS] [MAIN][RPT][GENERAL] Dashboard Daily loaded: 288 rows range date time start: 03/01/2026 17:02:40 - 04/01/2026 16:57:35
+[03:15:14][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:15:14][INFO] [HOME][BASE][GENERAL] EVT=HOME_AVG_CALC | ROUTE: HOME  HOME | rows=2137 | æV=228.49 | æA=0.08 | æW=17.62 | ækWh=3.1320 | æHz=49.98 | æPF=0.95
+[03:15:14][INFO] [HOME][BASE][GENERAL] EVT=HOME_DAILY_CALC | ROUTE: HOME  HOME | rows=288 | æV=229.47 | æA=0.07 | æW=15.65 | ækWh=0.3720 | æHz=49.99 | æPF=0.94
+[03:15:14][INFO] [HOME][BASE][GENERAL] EVT=HOME_SUMMARY_REFRESH | ROUTE: HOME  HOME | avg_rows=2137 | daily_rows=288  status=SYNCED
+[03:15:14][INFO] [MAIN][BASE][GENERAL] Chart plotted with 1 active lines
+[03:16:51][INFO] [MAIN][BASE][GENERAL] Parameter Lock GENERAL -> State: LOCKED
+[03:16:51][INFO] [MAIN][BASE][GENERAL] 🔒 CONTRACT COMPLIANT lock applied -> Target Variable: W - Daya (Watt) (watt) | Train/Test Split: 80.0 | Forecasting: 1 -> Lock_1_General validates Split Ratio + Target Variable
+[03:16:51][INFO] [MAIN][BASE][GENERAL] 🔑 CRITICAL PARAM: TARGET_VARIABLE='watt' (W - Daya (Watt))
+[03:16:51][INFO] [MAIN][BASE][GENERAL] 🔑 CRITICAL PARAM: FORECASTING_HORIZON='1' (1 periods)
+[03:16:51][INFO] [MAIN][BASE][GENERAL] 🔍 E2E-02 LOCK VALIDATION: Target_validation=PASSED | Data_check=PASSED | Lock_applied=SUCCESS | Contract_requirement=SATISFIED
+[03:17:06][INFO] [MAIN][BASE][GENERAL] FTS Sensitivity Valid-LOCK changed -> Valid : ON
+[03:17:07][INFO] [MAIN][BASE][GENERAL] Parameter Lock FTS -> State: LOCKED
+[03:17:07][INFO] [MAIN][BASE][GENERAL] Initial Data Parameter for FTS submitted -> Interval : 9 | Partition : Equal Frequency (Frekuensi) | Sensitivity : 11.000 | Valid : ON -> Value lock for analysis
+[03:17:07][INFO] [MAIN][BASE][GENERAL] Initial Data Parameter for FTS submitted -> Interval : 9 | Partition : Equal Frequency (Frekuensi) | Sensitivity : 11.000 | Valid : ON -> Value lock for analysis
+[03:17:53][INFO] [MAIN][BASE][GENERAL] Parameter Lock ANN -> State: LOCKED
+[03:17:53][INFO] [MAIN][BASE][GENERAL] Initial Data Parameter for ANN submitted -> Epoch : 100 | Layers : 1 | Neuron/Layers : 16 | LR : 0.0100 | Batch : 32 | Lag K : 12 | Activation : relu -> Value lock for analysis
+[03:17:53][INFO] [MAIN][BASE][GENERAL] Initial Data Parameter for ANN submitted -> Epoch : 100 | Layers : 1 | Neuron/Layers : 16 | LR : 0.0100 | Batch : 32 | Lag K : 12 | Activation : relu -> Value lock for analysis
+[03:17:59][INFO] [MAIN][BASE][GENERAL] Parameter Lock ARIMA -> State: LOCKED
+[03:17:59][INIT] [INITIAL][CAL][ARIMA] EVT=PARAM_ARIMA_SUBMIT | ROUTE: INITIAL  MAIN,RESUME | ?mode=nonseasonal | ?order=(1,1,1) | ?seasonal_order=(-,-,-,0)
+[03:17:59][INFO] [MAIN][BASE][GENERAL] Initial Data Parameter for ARIMA submitted -> Mode : nonseasonal | p,d,q : (1,1,1) | P,D,Q : (-,-,-) | s : 0 -> Value lock for analysis
+[03:17:59][INFO] [INITIAL][CAL][GENERAL] EVT=PARAM_LOCK_APPLIED | ROUTE: INITIAL  MAIN,RESUME | status=READY
+[03:28:13][INFO] [MAIN][BASE][GENERAL] Target variable 'watt' validated: 4980/4980 valid values
+[03:28:13][INFO] [MAIN][BASE][GENERAL] 🔍 E2E-01 PARAM VALIDATION: target_variable extraction successful | Value='watt' | Data_quality=4980/4980 | Status=COLLECTION_OK
+[03:28:13][INFO] [MAIN][BASE][GENERAL] ✅ Pre-flight check passed: target_variable='watt' (4980/4980 valid)
+[03:28:13][INFO] [MAIN][BASE][GENERAL] 🔍 E2E-02 CONTRACT VALIDATION: Pre-flight_check=PASSED | Target_validation=OK | Data_sufficiency=OK | Contract_compliance=ENFORCED
+[03:28:13][INIT] [MAIN][CAL][GENERAL] EVT=UI_CLICK_START_ANALYSIS | ROUTE: MAIN  HOME,RESUME | status=START
+[03:28:13][INFO] [MAIN][BASE][GENERAL] [pipeli] ===== START RUN =====
+[03:28:13][INIT] [MAIN][CAL][GENERAL] Starting new analysis run with current configuration.
+[03:28:13][INFO] [MAIN][BASE][GENERAL] [source] Rows=2137 | Range=2025-12-27 23:52:34.298000 -> 2026-01-04 10:02:35.184000
+[03:28:13][INFO] [MAIN][BASE][GENERAL] [param] Split=80% | Horizon=1
+[03:28:13][INFO] [MAIN][BASE][GENERAL] [param] FTS interval=9 | sensitivity=11.0 | valid_lock=True
+[03:28:13][INFO] [MAIN][BASE][GENERAL] [param] ANN epochs=100 | neurons=16 | layers=1 | lr=0.01
+[03:28:13][INFO] [MAIN][BASE][GENERAL] [param] ARIMA mode=nonseasonal | order=(1,1,1) | s=0
+[03:28:13][INFO] [MAIN][BASE][GENERAL] Analysis starting with target variable: 'watt'
+[03:28:13][INFO] [MAIN][BASE][GENERAL] 🔑 ANALYSIS START: TARGET='watt' | FORECAST='1' | METHODS='FTS+ANN+ARIMA'
+[03:28:13][INFO] [MAIN][BASE][GENERAL] 🔍 E2E-03 PIPELINE VALIDATION: Target_extraction='watt' | Column_exists=TRUE | Pipeline_ready=TRUE
+[03:28:13][INFO] [MAIN][BASE][GENERAL] MODEL_PREP.Target_Selection: 2137 -> 2137 rows (removed 0 NaN/Infinite target values)
+[03:28:13][INFO] [MAIN][BASE][GENERAL] 🔍 E2E-03 TARGET VALIDATION: Original_rows=2137 | Clean_rows=2137 | Quality_ratio=1.000 | Target_column='watt'
+[03:28:13][INFO] [MAIN][BASE][GENERAL] 🔑 RESUME HEADER: Analysis Results | Target: W - Daya (Watt) | Horizon: 1 periods
+[03:28:13][INFO] [MAIN][CAL][GENERAL] EVT=PRE_RESAMPLE | ROUTE: MAIN  HOME,RESUME | step=1_Time_Index: Convert 'ts' (epoch ms) to DatetimeIndex | step=2_Resample: rule='5T' (5 minutes), aggregation='mean' | step=3_Imputation: ffill() -> bfill() -> fillna(0) | target_column=watt | 🔍 E2E-03: Preprocessing_target='watt' | Method='mean' | Status=PROCESSING
+[03:28:13][GEN] [MAIN][CAL][GENERAL] EVT=PRE_RESAMPLE | ROUTE: MAIN  HOME,RESUME | original_rows=2137 | resampled_rows=2139 | missing_filled_count=2 | status=OK
+[03:28:13][INFO] [MAIN][CAL][GENERAL] EVT=PRE_SPLIT | ROUTE: MAIN  HOME,RESUME | ratio=0.80 | calc_n_train=floor(len(series) * ratio) | train_set=series[0 : n_train] | test_set=series[n_train : end] | constraint=Sequential split (No random shuffle)
+[03:28:13][GEN] [MAIN][CAL][GENERAL] EVT=PRE_SPLIT | ROUTE: MAIN  HOME,RESUME | n_total=2139 | n_train=1711 | n_test=428 | status=OK
+[03:28:13][INFO] [MAIN][RPT][GENERAL] [baseline] Naive MAE=2.527166 | RMSE=5.124010 | MAPE=22.3465%
+[03:28:13][INFO] [MAIN][RPT][GENERAL] [baseline] MA(9) MAE=4.993521 | RMSE=6.635437 | MAPE=49.7484%
+[03:28:13][GEN] [MAIN][CAL][FTS] EVT=FTS_PARTITION | ROUTE: MAIN  HOME,RESUME | partition=equal-frequency | requested_intervals=9 | actual_intervals=9 | pad_pct=0.05
+[03:28:13][GEN] [MAIN][CAL][FTS] EVT=FTS_UOD | ROUTE: MAIN  HOME,RESUME | uod_min=-0.050000000000000266 | uod_max=51.65 | formula_min=min(data)-pad | formula_max=max(data)+pad
+[03:28:13][INFO] [MAIN][CAL][FTS] EVT=FTS_UOD | ROUTE: MAIN  HOME,RESUME | n_intervals=9 | interval_len=5.7444 | formula_len=(uod_max-uod_min)/n
+[03:28:13][GEN] [MAIN][CAL][FTS] EVT=FTS_FLR | ROUTE: MAIN  HOME,RESUME | flr_count=1710 | intervals=9
+[03:28:13][DEBUG] [MAIN][CAL][FTS] EVT=FTS_FLR | ROUTE: MAIN  HOME,RESUME | flr_head=['A5 -> A5', 'A5 -> A5', 'A5 -> A5']
+[03:28:13][GEN] [MAIN][CAL][FTS] EVT=FTS_FLRG | ROUTE: MAIN  HOME,RESUME | flrg_groups=9
+[03:28:13][DEBUG] [MAIN][CAL][FTS] EVT=FTS_FLRG | ROUTE: MAIN  HOME,RESUME | flrg_head=[('A1', 'A1 (66.1%), A2 (16.7%), A3 (5.4%), A5 (5.4%), A4 (3.2%), A6 (2.2%), A7 (1.1%)'), ('A2', 'A2 (57.2%), A1 (16.6%), A3 (12.8%), A6 (4.3%), A4 (3.2%), A5 (2.7%), A7 (1.6%), A8 (1.1%), A9 (0.5%)'), ('A3', 'A3 (63.4%), A2 (12.9%), A4 (10.8%), A1 (3.1%), A9 (2.6%), A8 (2.6%), A7 (2.1%), A5 (1.5%), A6 (1.0%)')]
+[03:28:13][INFO] [MAIN][CAL][FTS] EVT=FTS_FORECAST | ROUTE: MAIN  HOME,RESUME | defuzz_method=Weighted_Average | formula=sum(midpoint[i] * support[i])
+[03:28:13][DEBUG] [MAIN][CAL][FTS] EVT=FTS_FORECAST | ROUTE: MAIN  HOME,RESUME | forecast_head=[None, 6.664650537634408, 17.684114583333336, 17.684114583333336, 17.684114583333336]
+[03:28:13][INFO] [MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | MAE=3.309445 | RMSE=5.543230 | MAPE=30.8593%  status=OK
+[03:28:13][INFO] [MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAE=mean(|y-yhat|)=3.309445
+[03:28:13][INFO] [MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | formula_RMSE=sqrt(mean((y-yhat)^2))=5.543230
+[03:28:13][INFO] [MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAPE=mean(|(y-yhat)/y|)*100=30.8593%
+[03:28:13][INFO] [MAIN][BASE][GENERAL] [sens] cases=3 | best=case3
+[03:28:13][INIT] [MAIN][CAL][ANN] EVT=ANN_TRAIN_START | ROUTE: MAIN  HOME,RESUME | epochs=100 | neurons=16 | layers=1 | lr=0.01
+[03:28:20][INFO] [MAIN][CAL][ANN] EVT=ANN_TRAIN_START | ROUTE: MAIN  HOME,RESUME | scaler_min=2.3000 | scaler_max=49.3000 | formula_norm=(x-min)/(max-min)
+[03:28:20][INFO] [MAIN][CAL][ANN] EVT=ANN_TRAIN_START | ROUTE: MAIN  HOME,RESUME | layers=1 | neurons=16 | activation=relu_then_linear
+[03:28:20][INFO] [MAIN][CAL][ANN] EVT=ANN_TRAIN_END | ROUTE: MAIN  HOME,RESUME | final_loss=0.009977192617952824 | epochs_run=100  status=OK
+[03:28:20][DEBUG] [MAIN][CAL][ANN] EVT=ANN_TRAIN_END | ROUTE: MAIN  HOME,RESUME | loss_head_tail=[0.014379534870386124, 0.010049921460449696, 0.010096131823956966] ... [0.00996540579944849, 0.009961436502635479, 0.009977192617952824]
+[03:28:20][DEBUG] [MAIN][CAL][ANN] EVT=ANN_PREDICT | ROUTE: MAIN  HOME,RESUME | forecast_head=[6.369168758392334, 6.527852535247803, 17.210376739501953, 17.856821060180664, 18.318567276000977]
+[03:28:20][INFO] [MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | MAE=2.902866 | RMSE=4.834350 | MAPE=27.1025%  status=OK
+[03:28:20][INFO] [MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAE=mean(|y-yhat|)=2.902866
+[03:28:20][INFO] [MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | formula_RMSE=sqrt(mean((y-yhat)^2))=4.834350
+[03:28:20][INFO] [MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAPE=mean(|(y-yhat)/y|)*100=27.1025%
+[03:28:20][INIT] [MAIN][CAL][ARIMA] EVT=ARIMA_FIT | ROUTE: MAIN  HOME,RESUME | mode=nonseasonal | order=(1,1,1) | seasonal=(0,1,0,0)
+[03:28:20][INFO] [MAIN][CAL][ARIMA] EVT=ARIMA_DIAG | ROUTE: MAIN  HOME,RESUME | AIC=10100.319240930206 | BIC=10116.648476053251  status=OK
+[03:28:20][DEBUG] [MAIN][CAL][ARIMA] EVT=ARIMA_FORECAST | ROUTE: MAIN  HOME,RESUME | forecast_head=[7.512211913953291, 9.44030863496081, 10.634815008030282, 11.374842963971203, 11.833309647716762]
+[03:28:20][INFO] [MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | MAE=6.708417 | RMSE=7.740779 | MAPE=55.0772%  status=OK
+[03:28:20][INFO] [MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAE=mean(|y-yhat|)=6.708417
+[03:28:20][INFO] [MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | formula_RMSE=sqrt(mean((y-yhat)^2))=7.740779
+[03:28:20][INFO] [MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAPE=mean(|(y-yhat)/y|)*100=55.0772%
+[03:28:20][SUCCESS] [MAIN][RPT][GENERAL] Analysis pipeline finished. Rendering results...
+[03:28:21][INFO] [MAIN][RPT][GENERAL] [eval] ===== Evaluasi Prediksi =====
+[03:28:21][INFO] [MAIN][RPT][GENERAL] [eval] FTS MAE=3.309445 | RMSE=5.543230 | MAPE=30.8593%
+[03:28:21][INFO] [MAIN][RPT][GENERAL] [eval] ANN MAE=2.902866 | RMSE=4.834350 | MAPE=27.1025%
+[03:28:21][INFO] [MAIN][RPT][GENERAL] [eval] ARIMA MAE=6.708417 | RMSE=7.740779 | MAPE=55.0772%
+[03:28:21][INFO] [MAIN][RPT][GENERAL] [resume] Live: V=231.50 | I=0.08 | P=18.40 W | PF=0.97 | F=50.00 Hz
+[03:28:21][SUCCESS] [MAIN][RPT][GENERAL] Experiment log saved with run_id=23
+[03:28:21][SUCCESS] [MAIN][RPT][GENERAL] Experiment results stored to database for all methods.
+[03:28:21][INFO] [MAIN][BASE][GENERAL] [pipeli] ===== END RUN (OK) =====
+[03:28:23][INFO] [MAIN][BASE][GENERAL] Cancel clicked but no active worker.
+[03:53:47][INIT] [RESUME][CAL][GENERAL] EVT=EXPORT_START | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260112_035310.pdf
+[03:53:47][INIT] [RESUME][CAL][GENERAL] ===== START Export | TYPE=RESUME | FILE=resume_export_20260112_035310.pdf =====
+[03:53:47][GEN] [RESUME][CAL][GENERAL] EVT=RPT_BUILD_START | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260112_035310.pdf | progress=5% | stage=Preparing
+[03:53:47][GEN] [RESUME][CAL][GENERAL] EVT=RPT_BUILD_START | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260112_035310.pdf | progress=30% | stage=Summary Report
+[03:53:55][INFO] [RESUME][RPT][GENERAL] EVT=RPT_BUILD_DONE | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260112_035310.pdf | progress=100% | stage=Done  status=OK
+[03:53:55][SUCCESS] [RESUME][RPT][GENERAL] EVT=EXPORT_DONE | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260112_035310.pdf  status=OK
+[03:53:55][SUCCESS] [RESUME][RPT][GENERAL] ===== END Export | TYPE=RESUME | FILE=resume_export_20260112_035310.pdf | STATUS=OK =====
+[03:54:46][INIT] [RESUME][CAL][GENERAL] EVT=EXPORT_START | ROUTE: RESUME  RESUME | type=LOG_ZIP | guid=GRWIS2G1Y6 | out_dir=D:/0.0.SKRIPSI-ALMA/JANUARY 2026/Aplikasi/ppdl-app/sample_data/New Data Result - R5
+[03:54:46][INIT] [RESUME][CAL][GENERAL] ===== START Export | TYPE=LOG_ZIP | GUID=GRWIS2G1Y6 | OUT=D:/0.0.SKRIPSI-ALMA/JANUARY 2026/Aplikasi/ppdl-app/sample_data/New Data Result - R5 =====
+[03:54:47][SUCCESS] [RESUME][RPT][GENERAL] EVT=EXPORT_DONE | ROUTE: RESUME  RESUME | type=LOG_ZIP | guid=GRWIS2G1Y6 | zip=PPDL_LOG_GRWIS2G1Y6.zip  status=OK
+[03:54:47][SUCCESS] [RESUME][RPT][GENERAL] ===== END Export | TYPE=LOG_ZIP | GUID=GRWIS2G1Y6 | STATUS=OK =====

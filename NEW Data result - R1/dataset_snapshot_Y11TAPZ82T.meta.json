@@ -1,0 +1,11 @@
+{
+  "run_guid": "Y11TAPZ82T",
+  "snapshot": {
+    "strategy": "full",
+    "rows_total": 1689,
+    "rows_written": 1689,
+    "head_n": 0,
+    "tail_n": 0,
+    "sha256": "85813f7b2b68a5e446a367420cf115118e31de2cc723da8b2dd45b79ae3f984d"
+  }
+}

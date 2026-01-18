@@ -1,0 +1,51 @@
+{
+  "run_guid": "2LSRLCPB2S",
+  "exported_at": "2026-01-16 06:16:16",
+  "columns": [
+    {
+      "name": "ts_server",
+      "dtype": "int64",
+      "unit": "ms_epoch"
+    },
+    {
+      "name": "watt",
+      "dtype": "float64",
+      "unit": "W"
+    },
+    {
+      "name": "voltage",
+      "dtype": "float64",
+      "unit": "V"
+    },
+    {
+      "name": "current",
+      "dtype": "float64",
+      "unit": "A"
+    },
+    {
+      "name": "frequency",
+      "dtype": "float64",
+      "unit": "Hz"
+    },
+    {
+      "name": "energy_kwh",
+      "dtype": "float64",
+      "unit": "kWh"
+    },
+    {
+      "name": "pf",
+      "dtype": "float64",
+      "unit": "ratio"
+    },
+    {
+      "name": "source",
+      "dtype": "object",
+      "unit": null
+    },
+    {
+      "name": "timestamp",
+      "dtype": "datetime64[ns]",
+      "unit": "datetime"
+    }
+  ]
+}

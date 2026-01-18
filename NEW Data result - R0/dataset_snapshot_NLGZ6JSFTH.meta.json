@@ -1,0 +1,11 @@
+{
+  "run_guid": "NLGZ6JSFTH",
+  "snapshot": {
+    "strategy": "full",
+    "rows_total": 1955,
+    "rows_written": 1955,
+    "head_n": 0,
+    "tail_n": 0,
+    "sha256": "65ab918718446bd0421082e0f073456e6721bdefd361fd43647da4eff436e991"
+  }
+}
