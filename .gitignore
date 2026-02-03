@@ -1,5 +1,105 @@
-# Object file
-*.o
+# --- SECURITY ---
+# Abaikan semua file JSON kunci rahasia di dalam folder config
+config/ppdl-c7949-7536faac87ba.json
 
-# Ada Library Information
-*.ali
+# --- GENERAL ---
+# .gitignore file
+# ================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Credentials & Sensitive Data
+*.json  # Initially block all JSON, then allow specific ones
+*.key
+*.pem
+*.p12
+.env
+.env.*
+credentials/
+secrets/
+
+# Data Files (untuk protect privacy)
+input_data/real/
+output_data/results/
+temp/
+logs/
+*.db
+*.sqlite
+*.sqlite3
+
+# Large Files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Model Files (dapat besar)
+models/*.h5
+models/*.pkl
+models/*.joblib
+
+# Build/Distribution
+build/
+dist/
+*.egg-info/
+installer/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Allow specific files back
+!config/app_config.json
+!input_data/sample/
+!output_data/.gitkeep
+!temp/.gitkeep
+!logs/.gitkeep
