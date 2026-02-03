@@ -1,0 +1,30 @@
+{
+    "global": {
+        "split_ratio": 0.8,
+        "forecast_horizon": 1,
+        "resample_method": "mean",
+        "target_variable": "watt"
+    },
+    "fts": {
+        "interval": 9,
+        "sensitivity": 4.0,
+        "sensitivity_locked": true,
+        "partition": "equal-width"
+    },
+    "ann": {
+        "epoch": 99,
+        "neuron": 16,
+        "layers": 1,
+        "lr": 0.01
+    },
+    "arima": {
+        "p": 1,
+        "d": 1,
+        "q": 1,
+        "seasonal": false,
+        "P": 0,
+        "D": 1,
+        "Q": 0,
+        "s": 0
+    }
+}
