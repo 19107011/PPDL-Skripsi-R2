@@ -1,0 +1,11 @@
+{
+  "run_guid": "2LSRLCPB2S",
+  "snapshot": {
+    "strategy": "full",
+    "rows_total": 2137,
+    "rows_written": 2137,
+    "head_n": 0,
+    "tail_n": 0,
+    "sha256": "16dc88adb7c29371b18261cc80fe72f7f57b99830c1ab5852c03ae8ef8dcbcaa"
+  }
+}

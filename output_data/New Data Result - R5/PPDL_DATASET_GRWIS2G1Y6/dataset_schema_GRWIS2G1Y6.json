@@ -1,0 +1,51 @@
+{
+  "run_guid": "GRWIS2G1Y6",
+  "exported_at": "2026-01-12 03:54:47",
+  "columns": [
+    {
+      "name": "ts_server",
+      "dtype": "int64",
+      "unit": "ms_epoch"
+    },
+    {
+      "name": "watt",
+      "dtype": "float64",
+      "unit": "W"
+    },
+    {
+      "name": "voltage",
+      "dtype": "float64",
+      "unit": "V"
+    },
+    {
+      "name": "current",
+      "dtype": "float64",
+      "unit": "A"
+    },
+    {
+      "name": "frequency",
+      "dtype": "float64",
+      "unit": "Hz"
+    },
+    {
+      "name": "energy_kwh",
+      "dtype": "float64",
+      "unit": "kWh"
+    },
+    {
+      "name": "pf",
+      "dtype": "float64",
+      "unit": "ratio"
+    },
+    {
+      "name": "source",
+      "dtype": "object",
+      "unit": null
+    },
+    {
+      "name": "timestamp",
+      "dtype": "datetime64[ns]",
+      "unit": "datetime"
+    }
+  ]
+}

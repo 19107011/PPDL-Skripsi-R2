@@ -1,0 +1,305 @@
+RUN_GUID=XSKLJKDKBN
+RUN_START=2026-01-10 21:21:31
+APP_VERSION=1.0
+
+--- LOG STARTED: 2026-01-10 21:21:31.645394 ---
+===== START Calculation | BLOCK=DATA_INGESTION#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: raw_telemetry (SQLite) via DBManager.fetch_data()
+source_file=Data_26-desember-2025_sampai_10-januari-2026.json
+source_path=D:/Downloads\Data_26-desember-2025_sampai_10-januari-2026.json
+import_rows_found=4582
+import_rows_inserted=4582
+db_rows_total=4582
+analysis_rows=4006
+avg_range_start_ms=1766792985762 (2025-12-26 23:49:45)
+avg_range_end_ms=1768006361681 (2026-01-10 00:52:41)
+source_counts={'json_import': 4582}
+== RESULT ==
+rows_total=4582
+rows_analysis=4006
+status=OK
+===== END Calculation | BLOCK=DATA_INGESTION#01 =====
+
+===== START Calculation | BLOCK=DATA_SCHEMA#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: DataFrame columns + dtype + unit mapping
+col=ts_server dtype=int64 unit=ms_epoch
+col=watt dtype=float64 unit=W
+col=voltage dtype=float64 unit=V
+col=current dtype=float64 unit=A
+col=frequency dtype=float64 unit=Hz
+col=energy_kwh dtype=float64 unit=kWh
+col=pf dtype=float64 unit=ratio
+col=source dtype=object unit=text
+== RESULT ==
+columns=8
+status=OK
+===== END Calculation | BLOCK=DATA_SCHEMA#01 =====
+
+===== START Calculation | BLOCK=DATA_RANGE#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: ts_server (ms epoch)
+rows_ts_nonnull=4582
+median_delta_ms=300007
+gap_count_delta_gt_2x_median=11
+== RESULT ==
+range_start=2025-12-25 09:49:45
+range_end=2026-01-10 10:52:41
+median_delta_ms=300007
+gap_count=11
+===== END Calculation | BLOCK=DATA_RANGE#01 =====
+
+===== START Calculation | BLOCK=DATA_CLEAN#01 | SCOPE=CAL | METHOD=GENERAL =====
+rule: DataImporter._flatten_telemetry requires ts_server_ms and W fields
+rule: DataImporter._flatten_telemetry drops record when (voltage in {0,-1}) AND (pf == 0.0)
+rule: Preprocessor.resample_data handles missing via ffill then bfill then fillna(0)
+rule: Preprocessor.resample_data supports resample_method in {mean,ffill,linear}
+== RESULT ==
+status=OK
+===== END Calculation | BLOCK=DATA_CLEAN#01 =====
+
+===== START Calculation | BLOCK=DATA_VALID#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: full_df validity checks per column
+== RESULT ==
+rows_total=4582
+missing_ts_server=0
+missing_watt=0
+missing_voltage=0
+missing_current=0
+missing_frequency=0
+missing_energy_kwh=0
+missing_pf=0
+rows_analysis=4006
+status=OK
+===== END Calculation | BLOCK=DATA_VALID#01 =====
+
+===== START Calculation | BLOCK=PARAM_GENERAL_SUBMIT#01 | SCOPE=CAL | METHOD=GENERAL =====
+?target=1
+?split_ratio=0.8
+?forecast_horizon=1
+?resample_method=mean
+== RESULT ==
+status=CAPTURED
+===== END Calculation | BLOCK=PARAM_GENERAL_SUBMIT#01 =====
+
+===== START Calculation | BLOCK=PARAM_GENERAL_LOCK#01 | SCOPE=CAL | METHOD=GENERAL =====
+lock_general=True
+== RESULT ==
+locked=True
+status=OK
+===== END Calculation | BLOCK=PARAM_GENERAL_LOCK#01 =====
+
+===== START Calculation | BLOCK=PARAM_FTS_SUBMIT#01 | SCOPE=CAL | METHOD=FTS =====
+?interval=9
+?partition=Equal Width
+?sensitivity=1.0
+?sensitivity_locked=True
+== RESULT ==
+status=CAPTURED
+===== END Calculation | BLOCK=PARAM_FTS_SUBMIT#01 =====
+
+===== START Calculation | BLOCK=PARAM_ANN_SUBMIT#01 | SCOPE=CAL | METHOD=ANN =====
+?epoch=90
+?neuron=10
+?layers=1
+?lr=0.01
+== RESULT ==
+status=CAPTURED
+===== END Calculation | BLOCK=PARAM_ANN_SUBMIT#01 =====
+
+===== START Calculation | BLOCK=PARAM_ARIMA_SUBMIT#01 | SCOPE=CAL | METHOD=ARIMA =====
+?seasonal=False
+?order=(1,1,1)
+?seasonal_order=(0,1,0,0)
+== RESULT ==
+status=CAPTURED
+===== END Calculation | BLOCK=PARAM_ARIMA_SUBMIT#01 =====
+
+===== START Calculation | BLOCK=PARAM_ALL_LOCK#01 | SCOPE=CAL | METHOD=GENERAL =====
+lock_general=True
+lock_fts=True
+lock_ann=True
+lock_arima_seasonal=False
+lock_arima_nonseasonal=True
+data_ready=True
+== RESULT ==
+all_locked=True
+status=OK
+===== END Calculation | BLOCK=PARAM_ALL_LOCK#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_RANGE#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: df = _query_raw_df() sorted by ts
+range_selected_start=2025-12-26 23:49:45
+range_selected_end=2026-01-10 00:52:41
+rule: clamp (swap) if end < start
+filter: df_avg = df[(ts>=start) & (ts<=end)]
+fallback_to_full_df=False
+sample_head_n=3
+sample: ts=2025-12-26 23:53:12 | V=223.200 | A=0.119 | W=25.100 | Hz=50.000 | PF=0.950 | E_kwh=3.970000
+sample: ts=2025-12-26 23:58:12 | V=224.600 | A=0.120 | W=25.400 | Hz=50.000 | PF=0.940 | E_kwh=3.972000
+sample: ts=2025-12-27 00:03:13 | V=223.700 | A=0.107 | W=22.700 | Hz=50.000 | PF=0.950 | E_kwh=3.974000
+sample_tail_n=3
+sample: ts=2026-01-10 00:37:41 | V=228.900 | A=0.092 | W=19.500 | Hz=50.000 | PF=0.930 | E_kwh=10.085000
+sample: ts=2026-01-10 00:42:41 | V=226.900 | A=0.079 | W=17.400 | Hz=50.000 | PF=0.970 | E_kwh=10.086000
+sample: ts=2026-01-10 00:47:41 | V=226.700 | A=0.079 | W=17.500 | Hz=49.900 | PF=0.980 | E_kwh=10.088000
+== RESULT ==
+rows_total=4582
+rows_avg=4006
+range_used_start=2025-12-26 23:53:12
+range_used_end=2026-01-10 00:47:41
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_RANGE#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_COUNT#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: df_avg from HOME_AVG_RANGE#01
+note: mean() ignores NaN by default
+== RESULT ==
+rows=4006
+missing_voltage=0
+missing_current=0
+missing_watt=0
+missing_frequency=0
+missing_pf=0
+missing_energy_kwh=0
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_COUNT#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_V#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: voltage (V) from df_avg
+formula: Avg.Period.V = sum(V_valid) / count(V_valid)
+n_total=4006 n_valid=4006 n_missing=0
+== RESULT ==
+‘V=228.506540 V
+count=4006
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_V#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_A#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: current (A) from df_avg
+formula: Avg.Period.A = sum(A_valid) / count(A_valid)
+== RESULT ==
+‘A=0.083381 A
+count=4006
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_A#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_W#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: watt (W) from df_avg
+n_total=4006 n_valid=4006 n_missing=0
+op: W_avg = mean(watt_i) over valid (non-NaN) rows
+== RESULT ==
+‘W=18.227184 W
+formula: Avg.Period.W = sum(W_valid) / count(W_valid)
+===== END Calculation | BLOCK=HOME_AVG_W#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_E#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: df_avg with ts (datetime) + watt (W) + optional energy_kwh (kWh)
+rule: if energy_kwh has >=2 valid values -> E = last - first (clamped >=0)
+else: E = sum(watt * dt_hours)/1000 (numerical integration)
+E_first=3.970000 kWh
+E_last=10.088000 kWh
+delta=6.118000 kWh
+formula: E = E_last - E_first
+== RESULT ==
+‘E=6.118000 kWh
+method=SENSOR_DELTA
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_E#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_HZ#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: frequency (Hz) from df_avg
+n_total=4006 n_valid=4006 n_missing=0
+op: Hz_avg = mean(frequency_i) over valid (non-NaN) rows
+== RESULT ==
+‘Hz=49.981278 Hz
+count=4006
+formula: Avg.Period.F = sum(F_valid) / count(F_valid)
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_HZ#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_PF#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: pf from df_avg
+n_total=4006 n_valid=4006 n_missing=0
+op: PF_avg = mean(pf_i) over valid (non-NaN) rows
+== RESULT ==
+‘PF=0.950339
+count=4006
+formula: Avg.Period.PF = sum(PF_valid) / count(PF_valid)
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_PF#01 =====
+
+===== START Calculation | BLOCK=HOME_SUMMARY_REFRESH#01 | SCOPE=BASE | METHOD=GENERAL =====
+Aggregating all HOME_AVG_* blocks
+note: E is total energy in selected range (kWh), not mean
+== RESULT ==
+rows=4006
+‘V=228.506540 V
+‘A=0.083381 A
+‘W=18.227184 W
+‘kWh=6.118000 kWh
+‘Hz=49.981278 Hz
+‘PF=0.950339
+status=OK
+===== END Calculation | BLOCK=HOME_SUMMARY_REFRESH#01 =====
+
+===== START Calculation | BLOCK=HOME_DAILY_GROUP#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: df = _query_raw_df() sorted by ts
+date_selected=2026-01-10
+rule: chosen_day = normalize(date_selected) (00:00:00)
+filter: df_daily = df[(ts>=chosen_day) & (ts<chosen_day+1d)]
+fallback_to_last_day=False
+sample_head_n=3
+sample: ts=2026-01-10 00:02:41 | V=234.500 | A=0.092 | W=19.900 | Hz=50.000 | PF=0.920 | E_kwh=10.074000
+sample: ts=2026-01-10 00:07:41 | V=233.500 | A=0.092 | W=19.900 | Hz=49.900 | PF=0.930 | E_kwh=10.075000
+sample: ts=2026-01-10 00:12:41 | V=232.900 | A=0.103 | W=21.900 | Hz=50.000 | PF=0.910 | E_kwh=10.077000
+sample_tail_n=3
+sample: ts=2026-01-10 10:42:43 | V=228.900 | A=0.051 | W=11.300 | Hz=49.900 | PF=0.970 | E_kwh=10.211000
+sample: ts=2026-01-10 10:47:41 | V=229.900 | A=0.047 | W=10.200 | Hz=50.000 | PF=0.940 | E_kwh=10.212000
+sample: ts=2026-01-10 10:52:41 | V=228.100 | A=0.067 | W=14.400 | Hz=50.000 | PF=0.940 | E_kwh=10.213000
+== RESULT ==
+day_used=2026-01-10
+rows_daily=131
+status=OK
+===== END Calculation | BLOCK=HOME_DAILY_GROUP#01 =====
+
+===== START Calculation | BLOCK=HOME_DAILY_COUNT#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: df_daily from HOME_DAILY_GROUP#01
+note: mean() ignores NaN by default
+== RESULT ==
+rows=131
+missing_voltage=0
+missing_current=0
+missing_watt=0
+missing_frequency=0
+missing_pf=0
+missing_energy_kwh=0
+status=OK
+===== END Calculation | BLOCK=HOME_DAILY_COUNT#01 =====
+
+===== START Calculation | BLOCK=HOME_DAILY_METRIC#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: df_daily (1 day) from HOME_DAILY_GROUP#01
+op: daily V/A/W/Hz/PF = mean(series) over valid rows (NaN ignored)
+op: daily E(kWh) uses same definition as _energy_kwh(df)
+== RESULT ==
+‘V=228.767176 V
+‘A=0.058542 A
+‘W=12.745038 W
+‘kWh=0.139000 kWh
+‘Hz=49.979389 Hz
+‘PF=0.937405
+status=OK
+===== END Calculation | BLOCK=HOME_DAILY_METRIC#01 =====
+
+===== START Calculation | BLOCK=HOME_DAILY_SUMMARY#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: outputs from HOME_DAILY_* blocks
+note: E is total energy in the day (kWh), not mean
+== RESULT ==
+day=2026-01-10
+rows=131
+‘V=228.767176 V
+‘A=0.058542 A
+‘W=12.745038 W
+‘kWh=0.139000 kWh
+‘Hz=49.979389 Hz
+‘PF=0.937405
+status=OK
+===== END Calculation | BLOCK=HOME_DAILY_SUMMARY#01 =====
+

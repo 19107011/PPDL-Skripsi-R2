@@ -1,0 +1,11 @@
+{
+  "run_guid": "XSKLJKDKBN",
+  "snapshot": {
+    "strategy": "full",
+    "rows_total": 4006,
+    "rows_written": 4006,
+    "head_n": 0,
+    "tail_n": 0,
+    "sha256": "4e42396fcc9cd65571fe3c02ed6b772b83e0bd310f6e01606de6bc7a531ea2d8"
+  }
+}

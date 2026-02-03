@@ -1,0 +1,38 @@
+{
+  "run_guid": "XSKLJKDKBN",
+  "identity_lines": [
+    "RUN_GUID=XSKLJKDKBN",
+    "RUN_START=2026-01-10 21:21:31",
+    "APP_VERSION=1.0"
+  ],
+  "exported_at": "2026-01-10 21:25:48",
+  "params": {
+    "global": {
+      "split_ratio": 0.8,
+      "forecast_horizon": 1,
+      "resample_method": "mean"
+    },
+    "fts": {
+      "interval": 9,
+      "sensitivity": 1.0,
+      "sensitivity_locked": true,
+      "partition": "Equal Width"
+    },
+    "ann": {
+      "epoch": 90,
+      "neuron": 10,
+      "layers": 1,
+      "lr": 0.01
+    },
+    "arima": {
+      "p": 1,
+      "d": 1,
+      "q": 1,
+      "seasonal": false,
+      "P": 0,
+      "D": 1,
+      "Q": 0,
+      "s": 0
+    }
+  }
+}

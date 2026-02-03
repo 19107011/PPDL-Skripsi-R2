@@ -1,0 +1,376 @@
+RUN_GUID=XSKLJKDKBN
+RUN_START=2026-01-10 21:21:31
+APP_VERSION=1.0
+
+--- LOG STARTED: 2026-01-10 21:21:31.645394 ---
+[21:21:31][INIT][MAIN][CAL][GENERAL] EVT=UI_CLICK_START_ANALYSIS | ROUTE: MAIN  HOME,RESUME | status=START
+===== START Calculation | BLOCK=DATA_INGESTION#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: raw_telemetry (SQLite) via DBManager.fetch_data()
+source_file=Data_26-desember-2025_sampai_10-januari-2026.json
+source_path=D:/Downloads\Data_26-desember-2025_sampai_10-januari-2026.json
+import_rows_found=4582
+import_rows_inserted=4582
+db_rows_total=4582
+analysis_rows=4006
+avg_range_start_ms=1766792985762 (2025-12-26 23:49:45)
+avg_range_end_ms=1768006361681 (2026-01-10 00:52:41)
+source_counts={'json_import': 4582}
+== RESULT ==
+rows_total=4582
+rows_analysis=4006
+status=OK
+===== END Calculation | BLOCK=DATA_INGESTION#01 =====
+
+===== START Calculation | BLOCK=DATA_SCHEMA#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: DataFrame columns + dtype + unit mapping
+col=ts_server dtype=int64 unit=ms_epoch
+col=watt dtype=float64 unit=W
+col=voltage dtype=float64 unit=V
+col=current dtype=float64 unit=A
+col=frequency dtype=float64 unit=Hz
+col=energy_kwh dtype=float64 unit=kWh
+col=pf dtype=float64 unit=ratio
+col=source dtype=object unit=text
+== RESULT ==
+columns=8
+status=OK
+===== END Calculation | BLOCK=DATA_SCHEMA#01 =====
+
+===== START Calculation | BLOCK=DATA_RANGE#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: ts_server (ms epoch)
+rows_ts_nonnull=4582
+median_delta_ms=300007
+gap_count_delta_gt_2x_median=11
+== RESULT ==
+range_start=2025-12-25 09:49:45
+range_end=2026-01-10 10:52:41
+median_delta_ms=300007
+gap_count=11
+===== END Calculation | BLOCK=DATA_RANGE#01 =====
+
+===== START Calculation | BLOCK=DATA_CLEAN#01 | SCOPE=CAL | METHOD=GENERAL =====
+rule: DataImporter._flatten_telemetry requires ts_server_ms and W fields
+rule: DataImporter._flatten_telemetry drops record when (voltage in {0,-1}) AND (pf == 0.0)
+rule: Preprocessor.resample_data handles missing via ffill then bfill then fillna(0)
+rule: Preprocessor.resample_data supports resample_method in {mean,ffill,linear}
+== RESULT ==
+status=OK
+===== END Calculation | BLOCK=DATA_CLEAN#01 =====
+
+===== START Calculation | BLOCK=DATA_VALID#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: full_df validity checks per column
+== RESULT ==
+rows_total=4582
+missing_ts_server=0
+missing_watt=0
+missing_voltage=0
+missing_current=0
+missing_frequency=0
+missing_energy_kwh=0
+missing_pf=0
+rows_analysis=4006
+status=OK
+===== END Calculation | BLOCK=DATA_VALID#01 =====
+
+===== START Calculation | BLOCK=PARAM_GENERAL_SUBMIT#01 | SCOPE=CAL | METHOD=GENERAL =====
+?target=1
+?split_ratio=0.8
+?forecast_horizon=1
+?resample_method=mean
+== RESULT ==
+status=CAPTURED
+===== END Calculation | BLOCK=PARAM_GENERAL_SUBMIT#01 =====
+
+===== START Calculation | BLOCK=PARAM_GENERAL_LOCK#01 | SCOPE=CAL | METHOD=GENERAL =====
+lock_general=True
+== RESULT ==
+locked=True
+status=OK
+===== END Calculation | BLOCK=PARAM_GENERAL_LOCK#01 =====
+
+===== START Calculation | BLOCK=PARAM_FTS_SUBMIT#01 | SCOPE=CAL | METHOD=FTS =====
+?interval=9
+?partition=Equal Width
+?sensitivity=1.0
+?sensitivity_locked=True
+== RESULT ==
+status=CAPTURED
+===== END Calculation | BLOCK=PARAM_FTS_SUBMIT#01 =====
+
+===== START Calculation | BLOCK=PARAM_ANN_SUBMIT#01 | SCOPE=CAL | METHOD=ANN =====
+?epoch=90
+?neuron=10
+?layers=1
+?lr=0.01
+== RESULT ==
+status=CAPTURED
+===== END Calculation | BLOCK=PARAM_ANN_SUBMIT#01 =====
+
+===== START Calculation | BLOCK=PARAM_ARIMA_SUBMIT#01 | SCOPE=CAL | METHOD=ARIMA =====
+?seasonal=False
+?order=(1,1,1)
+?seasonal_order=(0,1,0,0)
+== RESULT ==
+status=CAPTURED
+===== END Calculation | BLOCK=PARAM_ARIMA_SUBMIT#01 =====
+
+===== START Calculation | BLOCK=PARAM_ALL_LOCK#01 | SCOPE=CAL | METHOD=GENERAL =====
+lock_general=True
+lock_fts=True
+lock_ann=True
+lock_arima_seasonal=False
+lock_arima_nonseasonal=True
+data_ready=True
+== RESULT ==
+all_locked=True
+status=OK
+===== END Calculation | BLOCK=PARAM_ALL_LOCK#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_RANGE#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: df = _query_raw_df() sorted by ts
+range_selected_start=2025-12-26 23:49:45
+range_selected_end=2026-01-10 00:52:41
+rule: clamp (swap) if end < start
+filter: df_avg = df[(ts>=start) & (ts<=end)]
+fallback_to_full_df=False
+sample_head_n=3
+sample: ts=2025-12-26 23:53:12 | V=223.200 | A=0.119 | W=25.100 | Hz=50.000 | PF=0.950 | E_kwh=3.970000
+sample: ts=2025-12-26 23:58:12 | V=224.600 | A=0.120 | W=25.400 | Hz=50.000 | PF=0.940 | E_kwh=3.972000
+sample: ts=2025-12-27 00:03:13 | V=223.700 | A=0.107 | W=22.700 | Hz=50.000 | PF=0.950 | E_kwh=3.974000
+sample_tail_n=3
+sample: ts=2026-01-10 00:37:41 | V=228.900 | A=0.092 | W=19.500 | Hz=50.000 | PF=0.930 | E_kwh=10.085000
+sample: ts=2026-01-10 00:42:41 | V=226.900 | A=0.079 | W=17.400 | Hz=50.000 | PF=0.970 | E_kwh=10.086000
+sample: ts=2026-01-10 00:47:41 | V=226.700 | A=0.079 | W=17.500 | Hz=49.900 | PF=0.980 | E_kwh=10.088000
+== RESULT ==
+rows_total=4582
+rows_avg=4006
+range_used_start=2025-12-26 23:53:12
+range_used_end=2026-01-10 00:47:41
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_RANGE#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_COUNT#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: df_avg from HOME_AVG_RANGE#01
+note: mean() ignores NaN by default
+== RESULT ==
+rows=4006
+missing_voltage=0
+missing_current=0
+missing_watt=0
+missing_frequency=0
+missing_pf=0
+missing_energy_kwh=0
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_COUNT#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_V#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: voltage (V) from df_avg
+formula: Avg.Period.V = sum(V_valid) / count(V_valid)
+n_total=4006 n_valid=4006 n_missing=0
+== RESULT ==
+‘V=228.506540 V
+count=4006
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_V#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_A#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: current (A) from df_avg
+formula: Avg.Period.A = sum(A_valid) / count(A_valid)
+== RESULT ==
+‘A=0.083381 A
+count=4006
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_A#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_W#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: watt (W) from df_avg
+n_total=4006 n_valid=4006 n_missing=0
+op: W_avg = mean(watt_i) over valid (non-NaN) rows
+== RESULT ==
+‘W=18.227184 W
+formula: Avg.Period.W = sum(W_valid) / count(W_valid)
+===== END Calculation | BLOCK=HOME_AVG_W#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_E#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: df_avg with ts (datetime) + watt (W) + optional energy_kwh (kWh)
+rule: if energy_kwh has >=2 valid values -> E = last - first (clamped >=0)
+else: E = sum(watt * dt_hours)/1000 (numerical integration)
+E_first=3.970000 kWh
+E_last=10.088000 kWh
+delta=6.118000 kWh
+formula: E = E_last - E_first
+== RESULT ==
+‘E=6.118000 kWh
+method=SENSOR_DELTA
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_E#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_HZ#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: frequency (Hz) from df_avg
+n_total=4006 n_valid=4006 n_missing=0
+op: Hz_avg = mean(frequency_i) over valid (non-NaN) rows
+== RESULT ==
+‘Hz=49.981278 Hz
+count=4006
+formula: Avg.Period.F = sum(F_valid) / count(F_valid)
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_HZ#01 =====
+
+===== START Calculation | BLOCK=HOME_AVG_PF#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: pf from df_avg
+n_total=4006 n_valid=4006 n_missing=0
+op: PF_avg = mean(pf_i) over valid (non-NaN) rows
+== RESULT ==
+‘PF=0.950339
+count=4006
+formula: Avg.Period.PF = sum(PF_valid) / count(PF_valid)
+status=OK
+===== END Calculation | BLOCK=HOME_AVG_PF#01 =====
+
+===== START Calculation | BLOCK=HOME_SUMMARY_REFRESH#01 | SCOPE=BASE | METHOD=GENERAL =====
+Aggregating all HOME_AVG_* blocks
+note: E is total energy in selected range (kWh), not mean
+== RESULT ==
+rows=4006
+‘V=228.506540 V
+‘A=0.083381 A
+‘W=18.227184 W
+‘kWh=6.118000 kWh
+‘Hz=49.981278 Hz
+‘PF=0.950339
+status=OK
+===== END Calculation | BLOCK=HOME_SUMMARY_REFRESH#01 =====
+
+===== START Calculation | BLOCK=HOME_DAILY_GROUP#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: df = _query_raw_df() sorted by ts
+date_selected=2026-01-10
+rule: chosen_day = normalize(date_selected) (00:00:00)
+filter: df_daily = df[(ts>=chosen_day) & (ts<chosen_day+1d)]
+fallback_to_last_day=False
+sample_head_n=3
+sample: ts=2026-01-10 00:02:41 | V=234.500 | A=0.092 | W=19.900 | Hz=50.000 | PF=0.920 | E_kwh=10.074000
+sample: ts=2026-01-10 00:07:41 | V=233.500 | A=0.092 | W=19.900 | Hz=49.900 | PF=0.930 | E_kwh=10.075000
+sample: ts=2026-01-10 00:12:41 | V=232.900 | A=0.103 | W=21.900 | Hz=50.000 | PF=0.910 | E_kwh=10.077000
+sample_tail_n=3
+sample: ts=2026-01-10 10:42:43 | V=228.900 | A=0.051 | W=11.300 | Hz=49.900 | PF=0.970 | E_kwh=10.211000
+sample: ts=2026-01-10 10:47:41 | V=229.900 | A=0.047 | W=10.200 | Hz=50.000 | PF=0.940 | E_kwh=10.212000
+sample: ts=2026-01-10 10:52:41 | V=228.100 | A=0.067 | W=14.400 | Hz=50.000 | PF=0.940 | E_kwh=10.213000
+== RESULT ==
+day_used=2026-01-10
+rows_daily=131
+status=OK
+===== END Calculation | BLOCK=HOME_DAILY_GROUP#01 =====
+
+===== START Calculation | BLOCK=HOME_DAILY_COUNT#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: df_daily from HOME_DAILY_GROUP#01
+note: mean() ignores NaN by default
+== RESULT ==
+rows=131
+missing_voltage=0
+missing_current=0
+missing_watt=0
+missing_frequency=0
+missing_pf=0
+missing_energy_kwh=0
+status=OK
+===== END Calculation | BLOCK=HOME_DAILY_COUNT#01 =====
+
+===== START Calculation | BLOCK=HOME_DAILY_METRIC#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: df_daily (1 day) from HOME_DAILY_GROUP#01
+op: daily V/A/W/Hz/PF = mean(series) over valid rows (NaN ignored)
+op: daily E(kWh) uses same definition as _energy_kwh(df)
+== RESULT ==
+‘V=228.767176 V
+‘A=0.058542 A
+‘W=12.745038 W
+‘kWh=0.139000 kWh
+‘Hz=49.979389 Hz
+‘PF=0.937405
+status=OK
+===== END Calculation | BLOCK=HOME_DAILY_METRIC#01 =====
+
+===== START Calculation | BLOCK=HOME_DAILY_SUMMARY#01 | SCOPE=BASE | METHOD=GENERAL =====
+input: outputs from HOME_DAILY_* blocks
+note: E is total energy in the day (kWh), not mean
+== RESULT ==
+day=2026-01-10
+rows=131
+‘V=228.767176 V
+‘A=0.058542 A
+‘W=12.745038 W
+‘kWh=0.139000 kWh
+‘Hz=49.979389 Hz
+‘PF=0.937405
+status=OK
+===== END Calculation | BLOCK=HOME_DAILY_SUMMARY#01 =====
+
+[21:21:32][INFO][MAIN][BASE][GENERAL] [pipeli] ===== START RUN =====
+[21:21:32][INIT][MAIN][CAL][GENERAL] Starting new analysis run with current configuration.
+[21:21:32][INFO][MAIN][BASE][GENERAL] [source] Rows=4006 | Range=2025-12-26 23:53:12.966000 -> 2026-01-10 00:47:41.863000
+[21:21:32][INFO][MAIN][BASE][GENERAL] [param] Split=80% | Horizon=1
+[21:21:32][INFO][MAIN][BASE][GENERAL] [param] FTS interval=9 | sensitivity=1.0 | valid_lock=True
+[21:21:32][INFO][MAIN][BASE][GENERAL] [param] ANN epochs=90 | neurons=10 | layers=1 | lr=0.01
+[21:21:32][INFO][MAIN][BASE][GENERAL] [param] ARIMA mode=nonseasonal | order=(1,1,1) | s=0
+[21:21:32][INFO][MAIN][CAL][GENERAL] EVT=PRE_RESAMPLE | ROUTE: MAIN  HOME,RESUME | step=1_Time_Index: Convert 'ts' (epoch ms) to DatetimeIndex | step=2_Resample: rule='5T' (5 minutes), aggregation='mean' | step=3_Imputation: ffill() -> bfill() -> fillna(0)
+[21:21:32][GEN][MAIN][CAL][GENERAL] EVT=PRE_RESAMPLE | ROUTE: MAIN  HOME,RESUME | original_rows=4006 | resampled_rows=4044 | missing_filled_count=38 | status=OK
+[21:21:32][INFO][MAIN][CAL][GENERAL] EVT=PRE_SPLIT | ROUTE: MAIN  HOME,RESUME | ratio=0.80 | calc_n_train=floor(len(series) * ratio) | train_set=series[0 : n_train] | test_set=series[n_train : end] | constraint=Sequential split (No random shuffle)
+[21:21:32][GEN][MAIN][CAL][GENERAL] EVT=PRE_SPLIT | ROUTE: MAIN  HOME,RESUME | n_total=4044 | n_train=3235 | n_test=809 | status=OK
+[21:21:32][INFO][MAIN][RPT][GENERAL] [baseline] Naive MAE=2.166584 | RMSE=4.615345 | MAPE=15.5990%
+[21:21:32][INFO][MAIN][RPT][GENERAL] [baseline] MA(9) MAE=3.502943 | RMSE=5.343847 | MAPE=25.5147%
+[21:21:32][GEN][MAIN][CAL][FTS] EVT=FTS_PARTITION | ROUTE: MAIN  HOME,RESUME | partition=equal-width | requested_intervals=9 | actual_intervals=9 | pad_pct=0.05
+[21:21:32][GEN][MAIN][CAL][FTS] EVT=FTS_UOD | ROUTE: MAIN  HOME,RESUME | uod_min=-0.050000000000000266 | uod_max=51.65 | formula_min=min(data)-pad | formula_max=max(data)+pad
+[21:21:32][INFO][MAIN][CAL][FTS] EVT=FTS_UOD | ROUTE: MAIN  HOME,RESUME | n_intervals=9 | interval_len=5.7444 | formula_len=(uod_max-uod_min)/n
+[21:21:32][GEN][MAIN][CAL][FTS] EVT=FTS_FLR | ROUTE: MAIN  HOME,RESUME | flr_count=3234 | intervals=9
+[21:21:32][DEBUG][MAIN][CAL][FTS] EVT=FTS_FLR | ROUTE: MAIN  HOME,RESUME | flr_head=['A5 -> A5', 'A5 -> A4', 'A4 -> A4']
+[21:21:32][GEN][MAIN][CAL][FTS] EVT=FTS_FLRG | ROUTE: MAIN  HOME,RESUME | flrg_groups=9
+[21:21:32][DEBUG][MAIN][CAL][FTS] EVT=FTS_FLRG | ROUTE: MAIN  HOME,RESUME | flrg_head=[('A1', 'A1 (67.0%), A2 (22.7%), A4 (7.2%), A3 (2.1%), A5 (1.0%)'), ('A2', 'A2 (75.3%), A4 (8.2%), A3 (8.1%), A1 (5.9%), A5 (2.2%), A6 (0.2%), A8 (0.2%)'), ('A3', 'A3 (53.0%), A2 (18.8%), A4 (16.7%), A5 (9.8%), A6 (0.9%), A1 (0.9%)')]
+[21:21:32][INFO][MAIN][CAL][FTS] EVT=FTS_FORECAST | ROUTE: MAIN  HOME,RESUME | defuzz_method=Weighted_Average | formula=sum(midpoint[i] * support[i])
+[21:21:32][DEBUG][MAIN][CAL][FTS] EVT=FTS_FORECAST | ROUTE: MAIN  HOME,RESUME | forecast_head=[None, 15.36671415004748, 15.36671415004748, 10.100897170462385, 10.100897170462385]
+[21:21:32][INFO][MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | MAE=2.762171 | RMSE=4.447403 | MAPE=21.0998%  status=OK
+[21:21:32][INFO][MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAE=mean(|y-yhat|)=2.762171
+[21:21:32][INFO][MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | formula_RMSE=sqrt(mean((y-yhat)^2))=4.447403
+[21:21:32][INFO][MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAPE=mean(|(y-yhat)/y|)*100=21.0998%
+[21:21:32][INFO][MAIN][BASE][GENERAL] [sens] cases=3 | best=case1
+[21:21:32][INIT][MAIN][CAL][ANN] EVT=ANN_TRAIN_START | ROUTE: MAIN  HOME,RESUME | epochs=90 | neurons=10 | layers=1 | lr=0.01
+[21:21:42][INFO][MAIN][CAL][ANN] EVT=ANN_TRAIN_START | ROUTE: MAIN  HOME,RESUME | scaler_min=2.3000 | scaler_max=49.3000 | formula_norm=(x-min)/(max-min)
+[21:21:42][INFO][MAIN][CAL][ANN] EVT=ANN_TRAIN_START | ROUTE: MAIN  HOME,RESUME | layers=1 | neurons=10 | activation=relu_then_linear
+[21:21:43][INFO][MAIN][CAL][ANN] EVT=ANN_TRAIN_END | ROUTE: MAIN  HOME,RESUME | final_loss=0.0094704395160079 | epochs_run=90  status=OK
+[21:21:43][DEBUG][MAIN][CAL][ANN] EVT=ANN_TRAIN_END | ROUTE: MAIN  HOME,RESUME | loss_head_tail=[0.010153182782232761, 0.009439569897949696, 0.009270403534173965] ... [0.009416241198778152, 0.009213527664542198, 0.0094704395160079]
+[21:21:43][DEBUG][MAIN][CAL][ANN] EVT=ANN_PREDICT | ROUTE: MAIN  HOME,RESUME | forecast_head=[12.334924697875977, 12.167810440063477, 12.502038955688477, 11.917140007019043, 10.329551696777344]
+[21:21:43][INFO][MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | MAE=2.491003 | RMSE=4.289435 | MAPE=18.7024%  status=OK
+[21:21:43][INFO][MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAE=mean(|y-yhat|)=2.491003
+[21:21:43][INFO][MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | formula_RMSE=sqrt(mean((y-yhat)^2))=4.289435
+[21:21:43][INFO][MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAPE=mean(|(y-yhat)/y|)*100=18.7024%
+[21:21:43][INIT][MAIN][CAL][ARIMA] EVT=ARIMA_FIT | ROUTE: MAIN  HOME,RESUME | mode=nonseasonal | order=(1,1,1) | seasonal=(0,1,0,0)
+[21:21:43][INFO][MAIN][CAL][ARIMA] EVT=ARIMA_DIAG | ROUTE: MAIN  HOME,RESUME | AIC=18854.42119397167 | BIC=18872.663763230594  status=OK
+[21:21:43][DEBUG][MAIN][CAL][ARIMA] EVT=ARIMA_FORECAST | ROUTE: MAIN  HOME,RESUME | forecast_head=[10.963737617666439, 10.471285781600047, 10.141907537289185, 9.921601672066096, 9.774249273751993]
+[21:21:43][INFO][MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | MAE=9.460372 | RMSE=11.127481 | MAPE=48.3029%  status=OK
+[21:21:43][INFO][MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAE=mean(|y-yhat|)=9.460372
+[21:21:43][INFO][MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | formula_RMSE=sqrt(mean((y-yhat)^2))=11.127481
+[21:21:43][INFO][MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAPE=mean(|(y-yhat)/y|)*100=48.3029%
+[21:21:43][SUCCESS][MAIN][RPT][GENERAL] Analysis pipeline finished. Rendering results...
+[21:21:43][INFO][MAIN][RPT][GENERAL] [eval] ===== Evaluasi Prediksi =====
+[21:21:43][INFO][MAIN][RPT][GENERAL] [eval] FTS MAE=2.762171 | RMSE=4.447403 | MAPE=21.0998%
+[21:21:43][INFO][MAIN][RPT][GENERAL] [eval] ANN MAE=2.491003 | RMSE=4.289435 | MAPE=18.7024%
+[21:21:43][INFO][MAIN][RPT][GENERAL] [eval] ARIMA MAE=9.460372 | RMSE=11.127481 | MAPE=48.3029%
+[21:21:43][INFO][MAIN][RPT][GENERAL] [resume] Live: V=228.10 | I=0.07 | P=14.40 W | PF=0.94 | F=50.00 Hz
+[21:21:43][SUCCESS][MAIN][RPT][GENERAL] Experiment log saved with run_id=21
+[21:21:43][SUCCESS][MAIN][RPT][GENERAL] Experiment results stored to database for all methods.
+[21:21:43][INFO][MAIN][BASE][GENERAL] [pipeli] ===== END RUN (OK) =====
+[21:21:46][INFO][MAIN][BASE][GENERAL] Cancel clicked but no active worker.
+[21:22:03][SUCCESS][MAIN][RPT][GENERAL] Open SQL exported to temp file: C:\Users\nadhi\AppData\Local\Temp\ppdl_db_export_20260110_212203.csv
+[21:23:00][INIT][RESUME][CAL][GENERAL] EVT=EXPORT_START | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_212252.pdf
+[21:23:00][INIT][RESUME][CAL][GENERAL] ===== START Export | TYPE=RESUME | FILE=resume_export_20260110_212252.pdf =====
+[21:23:00][GEN][RESUME][CAL][GENERAL] EVT=RPT_BUILD_START | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_212252.pdf | progress=5% | stage=Preparing
+[21:23:00][GEN][RESUME][CAL][GENERAL] EVT=RPT_BUILD_START | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_212252.pdf | progress=30% | stage=Summary Report
+[21:23:12][INFO][RESUME][RPT][GENERAL] EVT=RPT_BUILD_DONE | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_212252.pdf | progress=100% | stage=Done  status=OK
+[21:23:12][SUCCESS][RESUME][RPT][GENERAL] EVT=EXPORT_DONE | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_212252.pdf  status=OK
+[21:23:12][SUCCESS][RESUME][RPT][GENERAL] ===== END Export | TYPE=RESUME | FILE=resume_export_20260110_212252.pdf | STATUS=OK =====
+
+----- METADATA TAIL -----
+RUN_GUID=XSKLJKDKBN
+APP_NAME=PPDL
+APP_VERSION=1.0
+OUTPUT_PATH=D:/0.0.SKRIPSI-ALMA/JANUARY 2026/Aplikasi/ppdl-app/sample_data/New Data Result - R3/resume_export_20260110_212252.pdf
+[21:25:48][INIT][RESUME][CAL][GENERAL] EVT=EXPORT_START | ROUTE: RESUME  RESUME | type=LOG_ZIP | guid=XSKLJKDKBN | out_dir=D:/0.0.SKRIPSI-ALMA/JANUARY 2026/Aplikasi/ppdl-app/sample_data/New Data Result - R3
+[21:25:48][INIT][RESUME][CAL][GENERAL] ===== START Export | TYPE=LOG_ZIP | GUID=XSKLJKDKBN | OUT=D:/0.0.SKRIPSI-ALMA/JANUARY 2026/Aplikasi/ppdl-app/sample_data/New Data Result - R3 =====
