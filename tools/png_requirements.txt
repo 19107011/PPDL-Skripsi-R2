@@ -1,0 +1,11 @@
+# PNG Logo Preprocessing - Requirements
+# Install these packages in your venv before running png_logo_cleaner.py
+
+# Core image processing
+pip install Pillow
+
+# Numerical operations (usually already installed with data science packages)
+pip install numpy
+
+# Optional: For advanced PNG optimization (if needed)
+# pip install pngquant-cli
