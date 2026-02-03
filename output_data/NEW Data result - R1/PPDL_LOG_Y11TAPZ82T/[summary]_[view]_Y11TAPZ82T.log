@@ -1,0 +1,46 @@
+RUN_GUID=Y11TAPZ82T
+RUN_START=2026-01-10 17:19:03
+APP_VERSION=1.0
+
+--- LOG STARTED: 2026-01-10 17:19:03.798402 ---
+[17:19:03][INIT][MAIN][CAL][GENERAL] EVT=UI_CLICK_START_ANALYSIS | ROUTE: MAIN  HOME,RESUME | status=START
+[17:19:04][INFO][MAIN][BASE][GENERAL] [pipeli] ===== START RUN =====
+[17:19:04][INFO][MAIN][BASE][GENERAL] [source] Rows=1689 | Range=2025-12-28 23:52:35.315000 -> 2026-01-03 20:42:40.918000
+[17:19:04][INFO][MAIN][BASE][GENERAL] [param] Split=80% | Horizon=1
+[17:19:04][INFO][MAIN][BASE][GENERAL] [param] FTS interval=7 | sensitivity=1.0 | valid_lock=True
+[17:19:04][INFO][MAIN][BASE][GENERAL] [param] ANN epochs=90 | neurons=10 | layers=1 | lr=0.01
+[17:19:04][INFO][MAIN][BASE][GENERAL] [param] ARIMA mode=nonseasonal | order=(1,1,1) | s=0
+[17:19:04][INFO][MAIN][CAL][GENERAL] EVT=PRE_RESAMPLE | ROUTE: MAIN  HOME,RESUME | step=1_Time_Index: Convert 'ts' (epoch ms) to DatetimeIndex | step=2_Resample: rule='5T' (5 minutes), aggregation='mean' | step=3_Imputation: ffill() -> bfill() -> fillna(0)
+[17:19:04][GEN][MAIN][CAL][GENERAL] EVT=PRE_RESAMPLE | ROUTE: MAIN  HOME,RESUME | original_rows=1689 | resampled_rows=1691 | missing_filled_count=2 | status=OK
+[17:19:04][INFO][MAIN][CAL][GENERAL] EVT=PRE_SPLIT | ROUTE: MAIN  HOME,RESUME | ratio=0.80 | calc_n_train=floor(len(series) * ratio) | train_set=series[0 : n_train] | test_set=series[n_train : end] | constraint=Sequential split (No random shuffle)
+[17:19:04][GEN][MAIN][CAL][GENERAL] EVT=PRE_SPLIT | ROUTE: MAIN  HOME,RESUME | n_total=1691 | n_train=1352 | n_test=339 | status=OK
+[17:19:04][INFO][MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | MAE=3.287702 | RMSE=4.987688 | MAPE=26.0704%  status=OK
+[17:19:04][INFO][MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAE=mean(|y-yhat|)=3.287702
+[17:19:04][INFO][MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | formula_RMSE=sqrt(mean((y-yhat)^2))=4.987688
+[17:19:04][INFO][MAIN][RPT][FTS] EVT=FTS_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAPE=mean(|(y-yhat)/y|)*100=26.0704%
+[17:19:09][INFO][MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | MAE=2.825552 | RMSE=4.771804 | MAPE=25.5147%  status=OK
+[17:19:09][INFO][MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAE=mean(|y-yhat|)=2.825552
+[17:19:09][INFO][MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | formula_RMSE=sqrt(mean((y-yhat)^2))=4.771804
+[17:19:09][INFO][MAIN][RPT][ANN] EVT=ANN_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAPE=mean(|(y-yhat)/y|)*100=25.5147%
+[17:19:09][INFO][MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | MAE=6.727696 | RMSE=8.881323 | MAPE=70.6515%  status=OK
+[17:19:09][INFO][MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAE=mean(|y-yhat|)=6.727696
+[17:19:09][INFO][MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | formula_RMSE=sqrt(mean((y-yhat)^2))=8.881323
+[17:19:09][INFO][MAIN][RPT][ARIMA] EVT=ARIMA_METRICS | ROUTE: MAIN  HOME,RESUME | formula_MAPE=mean(|(y-yhat)/y|)*100=70.6515%
+[17:19:10][INFO][MAIN][RPT][GENERAL] [eval] ===== Evaluasi Prediksi =====
+[17:19:10][INFO][MAIN][RPT][GENERAL] [eval] FTS MAE=3.287702 | RMSE=4.987688 | MAPE=26.0704%
+[17:19:10][INFO][MAIN][RPT][GENERAL] [eval] ANN MAE=2.825552 | RMSE=4.771804 | MAPE=25.5147%
+[17:19:10][INFO][MAIN][RPT][GENERAL] [eval] ARIMA MAE=6.727696 | RMSE=8.881323 | MAPE=70.6515%
+[17:19:10][INFO][MAIN][RPT][GENERAL] [resume] Live: V=227.60 | I=0.04 | P=8.60 W | PF=0.88 | F=50.00 Hz
+[17:19:10][INFO][MAIN][BASE][GENERAL] [pipeli] ===== END RUN (OK) =====
+[17:20:17][INIT][RESUME][CAL][GENERAL] EVT=EXPORT_START | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_171931.pdf
+[17:20:17][GEN][RESUME][CAL][GENERAL] EVT=RPT_BUILD_START | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_171931.pdf | progress=5% | stage=Preparing
+[17:20:17][GEN][RESUME][CAL][GENERAL] EVT=RPT_BUILD_START | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_171931.pdf | progress=30% | stage=Summary Report
+[17:20:20][INFO][RESUME][RPT][GENERAL] EVT=RPT_BUILD_DONE | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_171931.pdf | progress=100% | stage=Done  status=OK
+[17:20:20][SUCCESS][RESUME][RPT][GENERAL] EVT=EXPORT_DONE | ROUTE: RESUME  RESUME | type=RESUME | file=resume_export_20260110_171931.pdf  status=OK
+
+----- METADATA TAIL -----
+RUN_GUID=Y11TAPZ82T
+APP_NAME=PPDL
+APP_VERSION=1.0
+OUTPUT_PATH=D:/0.0.SKRIPSI-ALMA/JANUARY 2026/Aplikasi/ppdl-app/sample_data/NEW Data result - R1/resume_export_20260110_171931.pdf
+[17:21:23][INIT][RESUME][CAL][GENERAL] EVT=EXPORT_START | ROUTE: RESUME  RESUME | type=LOG_ZIP | guid=Y11TAPZ82T | out_dir=D:/0.0.SKRIPSI-ALMA/JANUARY 2026/Aplikasi/ppdl-app/sample_data/NEW Data result - R1

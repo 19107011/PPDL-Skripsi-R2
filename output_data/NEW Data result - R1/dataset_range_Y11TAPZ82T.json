@@ -1,0 +1,20 @@
+{
+  "run_guid": "Y11TAPZ82T",
+  "exported_at": "2026-01-10 17:21:23",
+  "rows": 1689,
+  "range": {
+    "start": "2025-12-28 23:52:35",
+    "end": "2026-01-03 20:42:40"
+  },
+  "missing_by_col": {
+    "ts_server": 0,
+    "watt": 0,
+    "voltage": 0,
+    "current": 0,
+    "frequency": 0,
+    "energy_kwh": 0,
+    "pf": 0,
+    "source": 0,
+    "timestamp": 0
+  }
+}
